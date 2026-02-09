@@ -1,0 +1,92 @@
+{
+  "_comment": "CMS-READY: Collection and drop governance data. Backend developers will connect to scheduling system.",
+  "active": [
+    {
+      "id": "spring-summer-2025",
+      "slug": "spring-summer-2025",
+      "title": "Spring/Summer 2025",
+      "subtitle": "A meditation on movement and light",
+      "description": "The new collection draws inspiration from Mediterranean mornings—soft light filtering through linen curtains, the quiet rustle of silk against skin.",
+      "image": "/assets/atelier-lookbook-hero.jpg",
+      "status": "active",
+      "visibility": "public",
+      "isPurchasable": true,
+      "launchDate": "2025-02-15",
+      "endDate": null,
+      "category": "atelier"
+    },
+    {
+      "id": "autumn-winter-2024",
+      "slug": "autumn-winter-2024",
+      "title": "Autumn/Winter 2024",
+      "subtitle": "Embracing warmth and depth",
+      "description": "Rich textures and muted tones for the colder months. A collection that wraps you in comfort without sacrificing elegance.",
+      "image": "/assets/atelier-coat.jpg",
+      "status": "active",
+      "visibility": "public",
+      "isPurchasable": true,
+      "launchDate": "2024-09-01",
+      "endDate": "2025-03-31",
+      "category": "atelier"
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "summer-2025-preview",
+      "slug": "summer-2025-preview",
+      "title": "Summer 2025 Preview",
+      "subtitle": "Coming Soon",
+      "description": "A glimpse into the next chapter. Available for preview, not yet for purchase.",
+      "image": "/assets/atelier-silk-dress.jpg",
+      "status": "soft-launch",
+      "visibility": "preview",
+      "isPurchasable": false,
+      "launchDate": "2025-05-01",
+      "previewDate": "2025-04-01",
+      "category": "atelier"
+    }
+  ],
+  "archived": [
+    {
+      "id": "spring-summer-2024",
+      "slug": "spring-summer-2024",
+      "title": "Spring/Summer 2024",
+      "subtitle": "Archive Collection",
+      "description": "A celebration of light and movement from our previous season.",
+      "image": "/assets/atelier-hero.jpg",
+      "status": "archived",
+      "visibility": "archive",
+      "isPurchasable": false,
+      "launchDate": "2024-02-01",
+      "endDate": "2024-08-31",
+      "archiveDate": "2024-09-01",
+      "category": "atelier"
+    },
+    {
+      "id": "autumn-winter-2023",
+      "slug": "autumn-winter-2023",
+      "title": "Autumn/Winter 2023",
+      "subtitle": "Archive Collection",
+      "description": "The collection that defined our approach to winter elegance.",
+      "image": "/assets/atelier-coat.jpg",
+      "status": "archived",
+      "visibility": "archive",
+      "isPurchasable": false,
+      "launchDate": "2023-09-01",
+      "endDate": "2024-02-28",
+      "archiveDate": "2024-03-01",
+      "category": "atelier"
+    }
+  ],
+  "drops": [
+    {
+      "id": "limited-noir-2025",
+      "title": "Noir Limited Edition",
+      "description": "A capsule of 25 exclusive pieces",
+      "scheduledDate": "2025-02-14",
+      "status": "scheduled",
+      "visibility": "teaser",
+      "productCount": 25
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "_comment": "CMS-READY: Global commerce configuration. Backend developers will replace with dynamic regional data.",
+  "countries": {
+    "IN": {
+      "name": "India",
+      "code": "IN",
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "locale": "en-IN",
+      "shippingZone": "asia-pacific",
+      "duties": {
+        "included": false,
+        "estimatedRate": 0.18,
+        "note": "Import duties and GST will be calculated at checkout"
+      },
+      "shipping": {
+        "standard": {
+          "label": "Standard Shipping",
+          "estimate": "10-14 business days",
+          "price": 2500,
+          "freeThreshold": 50000
+        },
+        "express": {
+          "label": "Express Shipping",
+          "estimate": "4-6 business days",
+          "price": 5500
+        }
+      },
+      "paymentMethods": ["card", "upi", "netbanking"],
+      "restrictions": [],
+      "vatRate": 0.18
+    },
+    "US": {
+      "name": "United States",
+      "code": "US",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "locale": "en-US",
+      "shippingZone": "north-america",
+      "duties": {
+        "included": false,
+        "estimatedRate": 0,
+        "note": "No import duties for orders under $800"
+      },
+      "shipping": {
+        "standard": {
+          "label": "Standard Shipping",
+          "estimate": "7-10 business days",
+          "price": 25,
+          "freeThreshold": 500
+        },
+        "express": {
+          "label": "Express Shipping",
+          "estimate": "3-5 business days",
+          "price": 45
+        }
+      },
+      "paymentMethods": ["card", "applepay", "googlepay"],
+      "restrictions": [],
+      "vatRate": 0
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "code": "GB",
+      "currency": "GBP",
+      "currencySymbol": "£",
+      "locale": "en-GB",
+      "shippingZone": "europe",
+      "duties": {
+        "included": true,
+        "estimatedRate": 0.20,
+        "note": "All duties and VAT included in displayed prices"
+      },
+      "shipping": {
+        "standard": {
+          "label": "Standard Shipping",
+          "estimate": "5-7 business days",
+          "price": 15,
+          "freeThreshold": 300
+        },
+        "express": {
+          "label": "Express Shipping",
+          "estimate": "2-3 business days",
+          "price": 25
+        }
+      },
+      "paymentMethods": ["card", "applepay", "googlepay", "klarna"],
+      "restrictions": [],
+      "vatRate": 0.20
+    },
+    "CA": {
+      "name": "Canada",
+      "code": "CA",
+      "currency": "CAD",
+      "currencySymbol": "C$",
+      "locale": "en-CA",
+      "shippingZone": "north-america",
+      "duties": {
+        "included": false,
+        "estimatedRate": 0.05,
+        "note": "GST/HST and duties calculated at checkout"
+      },
+      "shipping": {
+        "standard": {
+          "label": "Standard Shipping",
+          "estimate": "7-10 business days",
+          "price": 30,
+          "freeThreshold": 600
+        },
+        "express": {
+          "label": "Express Shipping",
+          "estimate": "3-5 business days",
+          "price": 55
+        }
+      },
+      "paymentMethods": ["card", "applepay", "googlepay"],
+      "restrictions": [],
+      "vatRate": 0.05
+    },
+    "AU": {
+      "name": "Australia",
+      "code": "AU",
+      "currency": "AUD",
+      "currencySymbol": "A$",
+      "locale": "en-AU",
+      "shippingZone": "asia-pacific",
+      "duties": {
+        "included": false,
+        "estimatedRate": 0.10,
+        "note": "GST applies to orders over AUD 1,000"
+      },
+      "shipping": {
+        "standard": {
+          "label": "Standard Shipping",
+          "estimate": "8-12 business days",
+          "price": 35,
+          "freeThreshold": 500
+        },
+        "express": {
+          "label": "Express Shipping",
+          "estimate": "4-6 business days",
+          "price": 65
+        }
+      },
+      "paymentMethods": ["card", "applepay", "googlepay", "afterpay"],
+      "restrictions": [],
+      "vatRate": 0.10
+    },
+    "FR": {
+      "name": "France",
+      "code": "FR",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "locale": "fr-FR",
+      "shippingZone": "europe-domestic",
+      "duties": {
+        "included": true,
+        "estimatedRate": 0.20,
+        "note": "All taxes included"
+      },
+      "shipping": {
+        "standard": {
+          "label": "Standard Shipping",
+          "estimate": "3-5 business days",
+          "price": 0,
+          "freeThreshold": 0
+        },
+        "express": {
+          "label": "Express Shipping",
+          "estimate": "1-2 business days",
+          "price": 15
+        },
+        "sameDay": {
+          "label": "Same Day (Paris)",
+          "estimate": "Same day before 6pm",
+          "price": 25,
+          "cities": ["Paris"]
+        }
+      },
+      "paymentMethods": ["card", "applepay", "googlepay", "klarna"],
+      "restrictions": [],
+      "vatRate": 0.20
+    }
+  },
+  "orderStatuses": {
+    "pending": {
+      "label": "Order Placed",
+      "description": "Your order has been received and is being processed",
+      "icon": "clock"
+    },
+    "confirmed": {
+      "label": "Order Confirmed",
+      "description": "Your order has been confirmed and is being prepared",
+      "icon": "check"
+    },
+    "preparing": {
+      "label": "Being Prepared",
+      "description": "Your items are being carefully prepared for shipment",
+      "icon": "package"
+    },
+    "shipped": {
+      "label": "Shipped",
+      "description": "Your order is on its way",
+      "icon": "truck"
+    },
+    "out_for_delivery": {
+      "label": "Out for Delivery",
+      "description": "Your order will arrive today",
+      "icon": "map-pin"
+    },
+    "delivered": {
+      "label": "Delivered",
+      "description": "Your order has been delivered",
+      "icon": "check-circle"
+    }
+  },
+  "returnPolicy": {
+    "window": 30,
+    "conditions": [
+      "Items must be unworn and in original condition",
+      "All tags and packaging must be intact",
+      "Beauty items must be sealed and unused",
+      "Made-to-order and personalized items are final sale"
+    ],
+    "process": [
+      {
+        "step": 1,
+        "title": "Request Return",
+        "description": "Initiate your return through your account or contact our team"
+      },
+      {
+        "step": 2,
+        "title": "Prepare Package",
+        "description": "Pack items securely with all original materials"
+      },
+      {
+        "step": 3,
+        "title": "Ship",
+        "description": "Use the provided prepaid label or arrange return shipping"
+      },
+      {
+        "step": 4,
+        "title": "Refund",
+        "description": "Receive your refund within 10 business days of receipt"
+      }
+    ],
+    "exceptions": [
+      "Pierced jewelry",
+      "Intimate items",
+      "Items marked as final sale"
+    ]
+  },
+  "warranty": {
+    "atelier": {
+      "duration": "2 years",
+      "coverage": "Manufacturing defects, hardware, stitching",
+      "process": "Contact our atelier team for assessment and repair"
+    },
+    "beauty": {
+      "duration": "Batch-specific expiry",
+      "coverage": "Product integrity until expiry date",
+      "process": "Contact our care team with batch number"
+    },
+    "lifestyle": {
+      "duration": "1 year",
+      "coverage": "Material and craftsmanship defects",
+      "process": "Photo documentation required for assessment"
+    }
+  },
+  "tracking": {
+    "carriers": {
+      "dhl": {
+        "name": "DHL Express",
+        "trackingUrl": "https://www.dhl.com/track?id="
+      },
+      "fedex": {
+        "name": "FedEx",
+        "trackingUrl": "https://www.fedex.com/track?tracknumbers="
+      },
+      "ups": {
+        "name": "UPS",
+        "trackingUrl": "https://www.ups.com/track?tracknum="
+      }
+    }
+  }
+}

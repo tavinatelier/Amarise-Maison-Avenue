@@ -1,0 +1,281 @@
+{
+  "revenue": {
+    "today": 2450.00,
+    "thisWeek": 18750.00,
+    "thisMonth": 67500.00,
+    "thisYear": 425000.00,
+    "currency": "EUR"
+  },
+  "orders": {
+    "pending": 3,
+    "processing": 7,
+    "shipped": 12,
+    "completed": 156,
+    "refunded": 2
+  },
+  "productMetrics": {
+    "totalActive": 24,
+    "lowStock": 4,
+    "outOfStock": 1
+  },
+  "topCountries": [
+    { "country": "Germany", "countryCode": "DE", "orders": 45, "revenue": 12500 },
+    { "country": "France", "countryCode": "FR", "orders": 38, "revenue": 9800 },
+    { "country": "United Kingdom", "countryCode": "GB", "orders": 32, "revenue": 8500 },
+    { "country": "Italy", "countryCode": "IT", "orders": 28, "revenue": 7200 },
+    { "country": "Spain", "countryCode": "ES", "orders": 22, "revenue": 5600 }
+  ],
+  "recentOrders": [
+    {
+      "id": "ord_001",
+      "orderNumber": "AM-2024-0187",
+      "customer": { "id": "cust_001", "email": "sophia@example.com", "name": "Sophia Laurent" },
+      "items": [{ "id": "item_001", "productId": "veil-lip-ritual", "title": "Veil Lip Ritual", "quantity": 1, "price": 95 }],
+      "subtotal": 95,
+      "tax": 19,
+      "shipping": 0,
+      "total": 114,
+      "currency": "EUR",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "processing",
+      "createdAt": "2024-01-04T10:30:00Z",
+      "updatedAt": "2024-01-04T10:30:00Z"
+    },
+    {
+      "id": "ord_002",
+      "orderNumber": "AM-2024-0186",
+      "customer": { "id": "cust_002", "email": "emma@example.com", "name": "Emma Chen" },
+      "items": [{ "id": "item_002", "productId": "radiance-serum", "title": "Radiance Serum", "quantity": 2, "price": 180 }],
+      "subtotal": 360,
+      "tax": 72,
+      "shipping": 0,
+      "total": 432,
+      "currency": "EUR",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "shipped",
+      "createdAt": "2024-01-04T09:15:00Z",
+      "updatedAt": "2024-01-04T11:00:00Z"
+    },
+    {
+      "id": "ord_003",
+      "orderNumber": "AM-2024-0185",
+      "customer": { "id": "cust_003", "email": "marie@example.com", "name": "Marie Dubois" },
+      "items": [{ "id": "item_003", "productId": "elan-silk-dress", "title": "Élan Silk Dress", "quantity": 1, "price": 890 }],
+      "subtotal": 890,
+      "tax": 178,
+      "shipping": 0,
+      "total": 1068,
+      "currency": "EUR",
+      "paymentStatus": "pending",
+      "fulfillmentStatus": "unfulfilled",
+      "createdAt": "2024-01-04T08:45:00Z",
+      "updatedAt": "2024-01-04T08:45:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "veil-lip-ritual",
+      "title": "Veil Lip Ritual",
+      "slug": "signature-lips",
+      "state": "published",
+      "category": "beauty",
+      "price": { "EUR": 95, "USD": 105, "GBP": 85 },
+      "stock": 142,
+      "images": ["/src/assets/beauty-lip-ritual.jpg"],
+      "createdAt": "2023-06-15T10:00:00Z",
+      "updatedAt": "2024-01-02T14:30:00Z",
+      "publishedAt": "2023-06-20T09:00:00Z"
+    },
+    {
+      "id": "radiance-serum",
+      "title": "Radiance Serum",
+      "slug": "radiance-serum",
+      "state": "published",
+      "category": "beauty",
+      "price": { "EUR": 180, "USD": 195, "GBP": 160 },
+      "stock": 89,
+      "images": ["/src/assets/beauty-serum.jpg"],
+      "createdAt": "2023-07-01T10:00:00Z",
+      "updatedAt": "2024-01-03T09:15:00Z",
+      "publishedAt": "2023-07-10T09:00:00Z"
+    },
+    {
+      "id": "elan-silk-dress",
+      "title": "Élan Silk Dress",
+      "slug": "elan-silk-dress",
+      "state": "published",
+      "category": "atelier",
+      "price": { "EUR": 890, "USD": 980, "GBP": 780 },
+      "stock": 12,
+      "images": ["/src/assets/atelier-silk-dress.jpg"],
+      "createdAt": "2023-09-01T10:00:00Z",
+      "updatedAt": "2024-01-01T16:45:00Z",
+      "publishedAt": "2023-09-15T09:00:00Z"
+    },
+    {
+      "id": "lumiere-candle",
+      "title": "Lumière Candle",
+      "slug": "lumiere-candle",
+      "state": "published",
+      "category": "lifestyle",
+      "price": { "EUR": 75, "USD": 85, "GBP": 68 },
+      "stock": 3,
+      "images": ["/src/assets/lifestyle-candle.jpg"],
+      "createdAt": "2023-08-15T10:00:00Z",
+      "updatedAt": "2024-01-04T08:00:00Z",
+      "publishedAt": "2023-08-25T09:00:00Z"
+    },
+    {
+      "id": "calma-vessel",
+      "title": "Calma Vessel",
+      "slug": "calma-vessel",
+      "state": "draft",
+      "category": "lifestyle",
+      "price": { "EUR": 120, "USD": 135, "GBP": 105 },
+      "stock": 45,
+      "images": ["/src/assets/lifestyle-vessel.jpg"],
+      "createdAt": "2024-01-02T10:00:00Z",
+      "updatedAt": "2024-01-04T11:30:00Z",
+      "publishedAt": null
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_001",
+      "email": "sophia@example.com",
+      "firstName": "Sophia",
+      "lastName": "Laurent",
+      "phone": "+33 6 12 34 56 78",
+      "country": "France",
+      "totalOrders": 8,
+      "totalSpent": 2450,
+      "currency": "EUR",
+      "createdAt": "2023-03-15T10:00:00Z",
+      "lastOrderAt": "2024-01-04T10:30:00Z"
+    },
+    {
+      "id": "cust_002",
+      "email": "emma@example.com",
+      "firstName": "Emma",
+      "lastName": "Chen",
+      "phone": "+44 7700 900123",
+      "country": "United Kingdom",
+      "totalOrders": 5,
+      "totalSpent": 1890,
+      "currency": "EUR",
+      "createdAt": "2023-05-20T10:00:00Z",
+      "lastOrderAt": "2024-01-04T09:15:00Z"
+    },
+    {
+      "id": "cust_003",
+      "email": "marie@example.com",
+      "firstName": "Marie",
+      "lastName": "Dubois",
+      "phone": "+33 6 98 76 54 32",
+      "country": "France",
+      "totalOrders": 12,
+      "totalSpent": 4580,
+      "currency": "EUR",
+      "createdAt": "2023-01-10T10:00:00Z",
+      "lastOrderAt": "2024-01-04T08:45:00Z"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "apr_001",
+      "type": "price_change",
+      "status": "pending",
+      "requestedBy": { "id": "admin_002", "name": "Claire Martin", "email": "claire@amarise.com" },
+      "resourceType": "product",
+      "resourceId": "radiance-serum",
+      "changes": { "price.EUR": { "from": 180, "to": 165 } },
+      "reason": "Holiday promotion - 8% discount",
+      "createdAt": "2024-01-04T09:00:00Z"
+    },
+    {
+      "id": "apr_002",
+      "type": "refund",
+      "status": "pending",
+      "requestedBy": { "id": "admin_003", "name": "Lucas Weber", "email": "lucas@amarise.com" },
+      "resourceType": "order",
+      "resourceId": "ord_145",
+      "changes": { "refundAmount": { "from": 0, "to": 432 } },
+      "reason": "Customer received damaged packaging",
+      "createdAt": "2024-01-03T16:30:00Z"
+    },
+    {
+      "id": "apr_003",
+      "type": "product_publish",
+      "status": "approved",
+      "requestedBy": { "id": "admin_002", "name": "Claire Martin", "email": "claire@amarise.com" },
+      "reviewedBy": { "id": "admin_001", "name": "Alexandra Noir", "email": "alex@amarise.com" },
+      "resourceType": "product",
+      "resourceId": "calma-vessel",
+      "changes": { "state": { "from": "draft", "to": "published" } },
+      "reason": "Product ready for Spring 2024 launch",
+      "reviewNotes": "Approved for launch. Ensure inventory is updated.",
+      "createdAt": "2024-01-02T11:00:00Z",
+      "reviewedAt": "2024-01-03T09:00:00Z"
+    }
+  ],
+  "auditLog": [
+    {
+      "id": "aud_001",
+      "timestamp": "2024-01-04T11:30:00Z",
+      "adminId": "admin_002",
+      "adminEmail": "claire@amarise.com",
+      "action": "product.update",
+      "resourceType": "product",
+      "resourceId": "calma-vessel",
+      "changes": [{ "field": "stock", "oldValue": 40, "newValue": 45 }]
+    },
+    {
+      "id": "aud_002",
+      "timestamp": "2024-01-04T10:45:00Z",
+      "adminId": "admin_001",
+      "adminEmail": "alex@amarise.com",
+      "action": "order.fulfill",
+      "resourceType": "order",
+      "resourceId": "ord_002",
+      "changes": [{ "field": "fulfillmentStatus", "oldValue": "processing", "newValue": "shipped" }]
+    },
+    {
+      "id": "aud_003",
+      "timestamp": "2024-01-04T09:00:00Z",
+      "adminId": "admin_002",
+      "adminEmail": "claire@amarise.com",
+      "action": "approval.request",
+      "resourceType": "product",
+      "resourceId": "radiance-serum",
+      "changes": [{ "field": "price.EUR", "oldValue": 180, "newValue": 165 }]
+    },
+    {
+      "id": "aud_004",
+      "timestamp": "2024-01-03T16:30:00Z",
+      "adminId": "admin_003",
+      "adminEmail": "lucas@amarise.com",
+      "action": "refund.request",
+      "resourceType": "order",
+      "resourceId": "ord_145",
+      "changes": [{ "field": "refundAmount", "oldValue": 0, "newValue": 432 }]
+    },
+    {
+      "id": "aud_005",
+      "timestamp": "2024-01-03T09:00:00Z",
+      "adminId": "admin_001",
+      "adminEmail": "alex@amarise.com",
+      "action": "approval.approve",
+      "resourceType": "product",
+      "resourceId": "calma-vessel",
+      "changes": [{ "field": "state", "oldValue": "draft", "newValue": "published" }]
+    }
+  ],
+  "incident": {
+    "isActive": false,
+    "severity": "low",
+    "freezeCheckout": false,
+    "freezeRefunds": false,
+    "freezePrices": false,
+    "freezeCMS": false
+  }
+}

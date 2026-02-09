@@ -1,0 +1,68 @@
+{
+  "_comment": "CMS-READY: Site-wide content and configuration. Backend developers will connect to settings API.",
+  "brand": {
+    "name": "AMARISÉ",
+    "tagline": "Quiet Luxury",
+    "description": "Where beauty meets intention. A world of refined elegance, where every detail whispers luxury."
+  },
+  "seo": {
+    "defaultTitle": "AMARISÉ | Luxury Beauty, Fashion & Lifestyle",
+    "titleTemplate": "%s | AMARISÉ",
+    "defaultDescription": "Discover AMARISÉ—a world of refined elegance where beauty meets intention. Explore our curated collection of luxury beauty, atelier fashion, and lifestyle objects.",
+    "keywords": ["luxury beauty", "slow fashion", "artisan lifestyle", "intentional living", "quiet luxury"],
+    "ogImage": "/og-image.jpg",
+    "twitterHandle": "@amarise"
+  },
+  "navigation": {
+    "main": [
+      { "label": "Beauty", "href": "/beauty" },
+      { "label": "Atelier", "href": "/atelier" },
+      { "label": "Lifestyle", "href": "/lifestyle" },
+      { "label": "Journal", "href": "/journal" }
+    ],
+    "secondary": [
+      { "label": "About", "href": "/about-amarise" },
+      { "label": "Sustainability", "href": "/values-sustainability" }
+    ]
+  },
+  "footer": {
+    "shop": [
+      { "label": "Beauty", "href": "/beauty" },
+      { "label": "Atelier", "href": "/atelier" },
+      { "label": "Lifestyle", "href": "/lifestyle" },
+      { "label": "New Arrivals", "href": "/new-arrivals" }
+    ],
+    "discover": [
+      { "label": "Journal", "href": "/journal" },
+      { "label": "About", "href": "/about-amarise" },
+      { "label": "Sustainability", "href": "/values-sustainability" },
+      { "label": "Archive", "href": "/archive" }
+    ],
+    "customer": [
+      { "label": "Contact", "href": "/contact" },
+      { "label": "Shipping", "href": "/shipping" },
+      { "label": "Returns", "href": "/returns" },
+      { "label": "FAQ", "href": "/faq" }
+    ],
+    "legal": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Service", "href": "/terms" },
+      { "label": "Cookie Policy", "href": "/cookies" }
+    ],
+    "social": [
+      { "platform": "Instagram", "href": "https://instagram.com/amarise", "icon": "instagram" },
+      { "platform": "Pinterest", "href": "https://pinterest.com/amarise", "icon": "pinterest" }
+    ],
+    "copyright": "© 2024 AMARISÉ. All rights reserved."
+  },
+  "contact": {
+    "email": "hello@amarise.com",
+    "phone": "+33 1 23 45 67 89",
+    "address": {
+      "street": "12 Rue de la Paix",
+      "city": "Paris",
+      "country": "France",
+      "postal": "75002"
+    }
+  }
+}

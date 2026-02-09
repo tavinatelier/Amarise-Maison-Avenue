@@ -1,0 +1,233 @@
+{
+  "_comment": "CMS-READY: Customer account data. Backend developers will replace with authenticated user data.",
+  "user": {
+    "id": "usr_001",
+    "email": "alexandra.morgan@email.com",
+    "fullName": "Alexandra Morgan",
+    "tier": "gold",
+    "memberSince": "2023-06-15",
+    "preferredCurrency": "EUR",
+    "preferredLanguage": "en",
+    "lifetimeValue": 12450,
+    "totalOrders": 8
+  },
+  "addresses": [
+    {
+      "id": "addr_001",
+      "type": "shipping",
+      "isDefault": true,
+      "firstName": "Alexandra",
+      "lastName": "Morgan",
+      "line1": "42 Rue du Faubourg Saint-Honoré",
+      "line2": "Apt 3B",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "postalCode": "75008",
+      "country": "France",
+      "countryCode": "FR",
+      "phone": "+33 1 42 65 12 34"
+    },
+    {
+      "id": "addr_002",
+      "type": "billing",
+      "isDefault": true,
+      "firstName": "Alexandra",
+      "lastName": "Morgan",
+      "line1": "42 Rue du Faubourg Saint-Honoré",
+      "line2": "Apt 3B",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "postalCode": "75008",
+      "country": "France",
+      "countryCode": "FR"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_2024_001",
+      "number": "AMR-2024-001847",
+      "date": "2024-01-10",
+      "status": "delivered",
+      "total": 2450,
+      "currency": "EUR",
+      "itemCount": 3,
+      "items": [
+        {
+          "title": "Élan Silk Dress",
+          "variant": "Pearl / S",
+          "price": 1850,
+          "image": "/assets/atelier-silk-dress.jpg"
+        },
+        {
+          "title": "Radiance Serum",
+          "variant": "30ml",
+          "price": 380,
+          "image": "/assets/beauty-serum.jpg"
+        },
+        {
+          "title": "Veil Lip Ritual",
+          "variant": "Dusk Rose",
+          "price": 220,
+          "image": "/assets/beauty-lip-ritual.jpg"
+        }
+      ],
+      "tracking": {
+        "carrier": "DHL Express",
+        "number": "1234567890",
+        "deliveredAt": "2024-01-14"
+      }
+    },
+    {
+      "id": "ord_2023_012",
+      "number": "AMR-2023-001523",
+      "date": "2023-11-28",
+      "status": "delivered",
+      "total": 3200,
+      "currency": "EUR",
+      "itemCount": 2,
+      "items": [
+        {
+          "title": "Lumière Candle",
+          "variant": "Large",
+          "price": 185,
+          "image": "/assets/lifestyle-candle.jpg"
+        },
+        {
+          "title": "Atelier Coat",
+          "variant": "Midnight / M",
+          "price": 3015,
+          "image": "/assets/atelier-coat.jpg"
+        }
+      ],
+      "tracking": {
+        "carrier": "DHL Express",
+        "number": "0987654321",
+        "deliveredAt": "2023-12-02"
+      }
+    },
+    {
+      "id": "ord_2023_008",
+      "number": "AMR-2023-001201",
+      "date": "2023-09-15",
+      "status": "delivered",
+      "total": 1650,
+      "currency": "EUR",
+      "itemCount": 2,
+      "items": [
+        {
+          "title": "Calma Vessel",
+          "variant": "Ivory",
+          "price": 420,
+          "image": "/assets/lifestyle-vessel.jpg"
+        },
+        {
+          "title": "Heritage Coat",
+          "variant": "Sand / S",
+          "price": 1230,
+          "image": "/assets/atelier-coat.jpg"
+        }
+      ]
+    }
+  ],
+  "wardrobe": [
+    {
+      "id": "ward_001",
+      "productId": "prod_silk_dress",
+      "title": "Élan Silk Dress",
+      "category": "atelier",
+      "variant": "Pearl / S",
+      "purchaseDate": "2024-01-10",
+      "image": "/assets/atelier-silk-dress.jpg",
+      "careInstructions": "Dry clean only. Store on padded hanger."
+    },
+    {
+      "id": "ward_002",
+      "productId": "prod_atelier_coat",
+      "title": "Atelier Coat",
+      "category": "atelier",
+      "variant": "Midnight / M",
+      "purchaseDate": "2023-11-28",
+      "image": "/assets/atelier-coat.jpg",
+      "careInstructions": "Professional cleaning recommended."
+    },
+    {
+      "id": "ward_003",
+      "productId": "prod_heritage_coat",
+      "title": "Heritage Coat",
+      "category": "atelier",
+      "variant": "Sand / S",
+      "purchaseDate": "2023-09-15",
+      "image": "/assets/atelier-coat.jpg",
+      "careInstructions": "Brush gently, store covered."
+    }
+  ],
+  "savedItems": [
+    {
+      "id": "save_001",
+      "productId": "prod_vessel_detail",
+      "title": "Calma Vessel",
+      "variant": "Midnight",
+      "price": 420,
+      "image": "/assets/lifestyle-vessel-detail.jpg",
+      "addedAt": "2024-01-08"
+    },
+    {
+      "id": "save_002",
+      "productId": "prod_lip_ritual_2",
+      "title": "Veil Lip Ritual",
+      "variant": "Evening Bloom",
+      "price": 220,
+      "image": "/assets/beauty-lip-ritual-2.jpg",
+      "addedAt": "2024-01-05"
+    }
+  ],
+  "preferences": {
+    "sizes": {
+      "atelier": "S",
+      "shoes": "38 EU"
+    },
+    "fragranceNotes": ["bergamot", "sandalwood", "rose"],
+    "skinConcerns": ["hydration", "radiance"],
+    "favoriteColors": ["ivory", "midnight", "pearl"],
+    "communicationPreferences": {
+      "email": true,
+      "sms": false,
+      "post": true
+    }
+  },
+  "serviceRequests": [
+    {
+      "id": "req_001",
+      "type": "return",
+      "status": "completed",
+      "createdAt": "2023-08-20",
+      "orderId": "ord_2023_005",
+      "item": "Silk Scarf - Ivory",
+      "reason": "Size exchange",
+      "resolution": "Exchanged for size M"
+    }
+  ],
+  "communications": [
+    {
+      "id": "comm_001",
+      "type": "order_shipped",
+      "date": "2024-01-11",
+      "subject": "Your Order is On Its Way",
+      "read": true
+    },
+    {
+      "id": "comm_002",
+      "type": "private_preview",
+      "date": "2024-01-05",
+      "subject": "Private Preview: Spring Collection",
+      "read": true
+    },
+    {
+      "id": "comm_003",
+      "type": "care_reminder",
+      "date": "2023-12-15",
+      "subject": "Care Guide for Your Atelier Coat",
+      "read": false
+    }
+  ]
+}

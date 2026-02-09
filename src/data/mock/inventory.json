@@ -1,0 +1,193 @@
+{
+  "inventory": [
+    {
+      "sku": "AMR-LIP-001",
+      "productId": "prod_001",
+      "title": "Veil Lip Ritual",
+      "category": "Beauty",
+      "status": "active",
+      "totalStock": 450,
+      "stockByCountry": {
+        "FR": 120,
+        "DE": 100,
+        "GB": 80,
+        "IT": 75,
+        "ES": 45,
+        "NL": 30
+      },
+      "lowStockThreshold": 50,
+      "reorderPoint": 100,
+      "lastRestocked": "2024-01-05T10:00:00Z",
+      "movements": [
+        {
+          "id": "mov_001",
+          "type": "inbound",
+          "quantity": 200,
+          "country": "FR",
+          "reason": "Supplier delivery",
+          "timestamp": "2024-01-05T10:00:00Z",
+          "performedBy": "ops@amarise.com"
+        },
+        {
+          "id": "mov_002",
+          "type": "outbound",
+          "quantity": -15,
+          "country": "FR",
+          "reason": "Customer orders",
+          "timestamp": "2024-01-08T16:30:00Z",
+          "performedBy": "system"
+        }
+      ]
+    },
+    {
+      "sku": "AMR-SRM-001",
+      "productId": "prod_002",
+      "title": "Radiance Serum",
+      "category": "Beauty",
+      "status": "active",
+      "totalStock": 280,
+      "stockByCountry": {
+        "FR": 80,
+        "DE": 70,
+        "GB": 50,
+        "IT": 40,
+        "ES": 25,
+        "NL": 15
+      },
+      "lowStockThreshold": 30,
+      "reorderPoint": 80,
+      "lastRestocked": "2024-01-02T14:00:00Z",
+      "movements": []
+    },
+    {
+      "sku": "AMR-DRS-001",
+      "productId": "prod_003",
+      "title": "Élan Silk Dress",
+      "category": "Atelier",
+      "status": "active",
+      "totalStock": 45,
+      "stockByCountry": {
+        "FR": 15,
+        "DE": 12,
+        "GB": 8,
+        "IT": 6,
+        "ES": 4
+      },
+      "lowStockThreshold": 10,
+      "reorderPoint": 20,
+      "lastRestocked": "2023-12-20T09:00:00Z",
+      "movements": []
+    },
+    {
+      "sku": "AMR-CND-001",
+      "productId": "prod_004",
+      "title": "Lumière Candle",
+      "category": "Lifestyle",
+      "status": "low_stock",
+      "totalStock": 28,
+      "stockByCountry": {
+        "FR": 10,
+        "DE": 8,
+        "GB": 5,
+        "IT": 3,
+        "ES": 2
+      },
+      "lowStockThreshold": 30,
+      "reorderPoint": 50,
+      "lastRestocked": "2023-12-15T11:00:00Z",
+      "movements": []
+    },
+    {
+      "sku": "AMR-VSL-001",
+      "productId": "prod_005",
+      "title": "Calma Vessel",
+      "category": "Lifestyle",
+      "status": "active",
+      "totalStock": 62,
+      "stockByCountry": {
+        "FR": 20,
+        "DE": 18,
+        "GB": 12,
+        "IT": 8,
+        "ES": 4
+      },
+      "lowStockThreshold": 15,
+      "reorderPoint": 30,
+      "lastRestocked": "2024-01-03T08:30:00Z",
+      "movements": []
+    },
+    {
+      "sku": "AMR-COT-001",
+      "productId": "prod_006",
+      "title": "Atelier Wool Coat",
+      "category": "Atelier",
+      "status": "out_of_stock",
+      "totalStock": 0,
+      "stockByCountry": {
+        "FR": 0,
+        "DE": 0,
+        "GB": 0,
+        "IT": 0,
+        "ES": 0
+      },
+      "lowStockThreshold": 5,
+      "reorderPoint": 15,
+      "lastRestocked": "2023-11-01T10:00:00Z",
+      "movements": []
+    },
+    {
+      "sku": "AMR-SCF-001",
+      "productId": "prod_007",
+      "title": "Silk Scarf Collection",
+      "category": "Atelier",
+      "status": "archived",
+      "totalStock": 12,
+      "stockByCountry": {
+        "FR": 5,
+        "DE": 4,
+        "GB": 3
+      },
+      "lowStockThreshold": 10,
+      "reorderPoint": 20,
+      "lastRestocked": "2023-08-15T10:00:00Z",
+      "archivedAt": "2024-01-01T00:00:00Z",
+      "archivedReason": "End of season - discontinued",
+      "movements": []
+    },
+    {
+      "sku": "AMR-EYE-001",
+      "productId": "prod_008",
+      "title": "Eye Ritual Palette",
+      "category": "Beauty",
+      "status": "low_stock",
+      "totalStock": 18,
+      "stockByCountry": {
+        "FR": 8,
+        "DE": 5,
+        "GB": 3,
+        "IT": 2
+      },
+      "lowStockThreshold": 20,
+      "reorderPoint": 40,
+      "lastRestocked": "2023-12-28T14:00:00Z",
+      "movements": []
+    }
+  ],
+  "summary": {
+    "totalSKUs": 8,
+    "activeProducts": 5,
+    "lowStockProducts": 2,
+    "outOfStockProducts": 1,
+    "archivedProducts": 1,
+    "totalUnits": 895,
+    "countriesServed": 6
+  },
+  "warehouses": [
+    { "code": "FR", "name": "Paris Central", "country": "France", "isPrimary": true },
+    { "code": "DE", "name": "Frankfurt Hub", "country": "Germany", "isPrimary": false },
+    { "code": "GB", "name": "London Fulfillment", "country": "United Kingdom", "isPrimary": false },
+    { "code": "IT", "name": "Milan Distribution", "country": "Italy", "isPrimary": false },
+    { "code": "ES", "name": "Madrid Center", "country": "Spain", "isPrimary": false },
+    { "code": "NL", "name": "Amsterdam Logistics", "country": "Netherlands", "isPrimary": false }
+  ]
+}

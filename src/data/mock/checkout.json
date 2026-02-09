@@ -1,0 +1,70 @@
+{
+  "cart": {
+    "items": [
+      {
+        "id": "cart_item_001",
+        "productId": "veil-lip-ritual",
+        "title": "Veil Lip Ritual",
+        "subtitle": "Shade: Velvet Rose",
+        "price": 95,
+        "quantity": 1,
+        "image": "/src/assets/beauty-lip-ritual.jpg"
+      },
+      {
+        "id": "cart_item_002",
+        "productId": "radiance-serum",
+        "title": "Radiance Serum",
+        "subtitle": "30ml",
+        "price": 180,
+        "quantity": 2,
+        "image": "/src/assets/beauty-serum.jpg"
+      }
+    ],
+    "subtotal": 455,
+    "shipping": 0,
+    "tax": 91,
+    "total": 546,
+    "currency": "EUR"
+  },
+  "shippingOptions": [
+    {
+      "id": "standard",
+      "name": "Standard Shipping",
+      "description": "5-7 business days",
+      "price": 0,
+      "estimatedDays": "5-7"
+    },
+    {
+      "id": "express",
+      "name": "Express Shipping",
+      "description": "2-3 business days",
+      "price": 15,
+      "estimatedDays": "2-3"
+    },
+    {
+      "id": "overnight",
+      "name": "Overnight Delivery",
+      "description": "Next business day",
+      "price": 35,
+      "estimatedDays": "1"
+    }
+  ],
+  "countries": [
+    { "code": "DE", "name": "Germany" },
+    { "code": "FR", "name": "France" },
+    { "code": "GB", "name": "United Kingdom" },
+    { "code": "IT", "name": "Italy" },
+    { "code": "ES", "name": "Spain" },
+    { "code": "AT", "name": "Austria" },
+    { "code": "BE", "name": "Belgium" },
+    { "code": "NL", "name": "Netherlands" },
+    { "code": "CH", "name": "Switzerland" }
+  ],
+  "mockOrder": {
+    "id": "ord_new_001",
+    "orderNumber": "AM-2024-0188",
+    "status": "confirmed",
+    "createdAt": "2024-01-04T14:30:00Z",
+    "estimatedDelivery": "2024-01-11"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "_comment": "CMS-READY: Brand authority and heritage content. Backend developers will replace with CMS.",
+  "founder": {
+    "name": "Amélie Renaud",
+    "title": "Founder & Creative Director",
+    "portrait": "/assets/founder-portrait.jpg",
+    "signature": "/assets/founder-signature.svg",
+    "story": [
+      "AMARISÉ was born from a quiet rebellion—a belief that true luxury exists not in logos or excess, but in the ritual of thoughtful living.",
+      "After two decades within the ateliers of Paris and Milan, I founded AMARISÉ in 2019 with a singular vision: to create objects worthy of becoming part of your story.",
+      "Each piece we craft represents a conversation between heritage and innovation, between the maker's hand and the wearer's life. We do not chase trends. We pursue permanence.",
+      "The name AMARISÉ—from the French 'amarrer,' to moor or anchor—reflects our philosophy. In a world of constant motion, we create anchors of beauty and meaning."
+    ],
+    "philosophy": "I believe the future of luxury is not more, but better. Not louder, but more resonant. Not faster, but more intentional."
+  },
+  "maison": {
+    "established": 2019,
+    "headquarters": "Paris, France",
+    "ateliers": [
+      {
+        "name": "Paris Atelier",
+        "location": "Paris, France",
+        "specialty": "Fashion & Leather Goods",
+        "established": 2019
+      },
+      {
+        "name": "Grasse Studio",
+        "location": "Grasse, France",
+        "specialty": "Beauty & Fragrance",
+        "established": 2020
+      },
+      {
+        "name": "Murano Workshop",
+        "location": "Murano, Italy",
+        "specialty": "Glass & Objects",
+        "established": 2021
+      }
+    ],
+    "values": [
+      {
+        "title": "Intentionality",
+        "description": "Every decision, from material selection to final stitch, is made with purpose. We do not create by accident."
+      },
+      {
+        "title": "Timelessness",
+        "description": "We design for decades, not seasons. Each piece is meant to become more beautiful with time and use."
+      },
+      {
+        "title": "Transparency",
+        "description": "We believe you have the right to know the story of everything you own—its origins, its makers, its impact."
+      },
+      {
+        "title": "Restraint",
+        "description": "True luxury whispers. We embrace simplicity, allowing quality to speak for itself."
+      }
+    ],
+    "milestones": [
+      { "year": 2019, "event": "AMARISÉ founded in Paris" },
+      { "year": 2020, "event": "Launch of Beauty collection with Grasse partners" },
+      { "year": 2021, "event": "Lifestyle collection debuts with Murano artisans" },
+      { "year": 2022, "event": "First international atelier in London" },
+      { "year": 2023, "event": "Private Circle program established" },
+      { "year": 2024, "event": "Archive vault opens to collectors" }
+    ]
+  },
+  "craft": {
+    "introduction": "At AMARISÉ, craft is not a marketing word—it is the foundation of everything we create. Each piece passes through trained hands, following processes refined over generations.",
+    "processes": [
+      {
+        "title": "Hand-Finishing",
+        "description": "Every seam, every edge, every detail is completed by hand. Machines assist; artisans perfect.",
+        "image": "/assets/craft-hand-finishing.jpg"
+      },
+      {
+        "title": "Material Selection",
+        "description": "We source from fewer than twelve partners worldwide, each chosen for their commitment to quality over quantity.",
+        "image": "/assets/craft-materials.jpg"
+      },
+      {
+        "title": "Quality Control",
+        "description": "A single piece may pass through seventeen quality checkpoints before reaching you. Nothing leaves our atelier that we would not keep ourselves.",
+        "image": "/assets/craft-quality.jpg"
+      }
+    ],
+    "artisans": {
+      "count": 47,
+      "averageExperience": "18 years",
+      "regions": ["France", "Italy", "Portugal", "Japan"]
+    }
+  },
+  "provenance": {
+    "introduction": "Every AMARISÉ piece carries a story of origin. We trace our materials to their source because transparency is not a feature—it is a responsibility.",
+    "materials": [
+      {
+        "name": "Mulberry Silk",
+        "origin": "Como, Italy",
+        "partner": "Seteria traditions since 1926",
+        "certification": "OEKO-TEX Standard 100"
+      },
+      {
+        "name": "Vegetable-Tanned Leather",
+        "origin": "Tuscany, Italy",
+        "partner": "Fourth-generation tannery",
+        "certification": "ICEC Certified"
+      },
+      {
+        "name": "Botanical Extracts",
+        "origin": "Grasse, France",
+        "partner": "Heritage perfumery house",
+        "certification": "COSMOS Organic"
+      },
+      {
+        "name": "Murano Glass",
+        "origin": "Murano, Italy",
+        "partner": "Master glassblower collective",
+        "certification": "Vetro Artistico Murano"
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "name": "B Corporation",
+      "status": "Pending (2025)",
+      "description": "Meeting rigorous standards of social and environmental performance"
+    },
+    {
+      "name": "Climate Neutral",
+      "status": "Certified",
+      "year": 2023,
+      "description": "Carbon neutral operations through verified offset programs"
+    },
+    {
+      "name": "PETA-Approved Vegan (Beauty)",
+      "status": "Certified",
+      "year": 2020,
+      "description": "No animal testing, no animal-derived ingredients in beauty line"
+    }
+  ],
+  "press": [
+    {
+      "publication": "Vogue France",
+      "date": "December 2024",
+      "title": "The New Quiet Luxury",
+      "excerpt": "AMARISÉ represents a different philosophy—one where the whisper commands more attention than the shout.",
+      "logo": "/assets/press-vogue.svg"
+    },
+    {
+      "publication": "Financial Times",
+      "date": "October 2024",
+      "title": "How to Dress",
+      "excerpt": "A maison that understands restraint is the ultimate sophistication.",
+      "logo": "/assets/press-ft.svg"
+    },
+    {
+      "publication": "Wallpaper*",
+      "date": "September 2024",
+      "title": "Design Directory 2024",
+      "excerpt": "The Calma Vessel earned its place among the year's most considered objects.",
+      "logo": "/assets/press-wallpaper.svg"
+    },
+    {
+      "publication": "The New York Times",
+      "date": "June 2024",
+      "title": "Style",
+      "excerpt": "Amélie Renaud is redefining what luxury means for a new generation.",
+      "logo": "/assets/press-nyt.svg"
+    }
+  ],
+  "recognition": [
+    {
+      "award": "Wallpaper* Design Award",
+      "category": "Best Lifestyle Object",
+      "year": 2024,
+      "item": "Calma Vessel"
+    },
+    {
+      "award": "Monocle Design Awards",
+      "category": "Best New Beauty Brand",
+      "year": 2023
+    },
+    {
+      "award": "LVMH Prize",
+      "category": "Shortlist",
+      "year": 2022
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "members": [
+    {
+      "id": "user_001",
+      "email": "sarah.chen@amarise.com",
+      "firstName": "Sarah",
+      "lastName": "Chen",
+      "role": "admin",
+      "title": "Head of Operations",
+      "avatar": null,
+      "timezone": "Europe/Paris",
+      "countries": ["FR", "DE", "IT", "ES", "NL", "BE"],
+      "permissions": ["all"],
+      "status": "active",
+      "lastActiveAt": "2024-01-12T15:30:00Z",
+      "createdAt": "2022-06-01T00:00:00Z"
+    },
+    {
+      "id": "user_002",
+      "email": "marcus.weber@amarise.com",
+      "firstName": "Marcus",
+      "lastName": "Weber",
+      "role": "manager",
+      "title": "DACH Regional Manager",
+      "avatar": null,
+      "timezone": "Europe/Berlin",
+      "countries": ["DE", "AT", "CH"],
+      "permissions": ["orders", "customers", "inventory", "refunds"],
+      "status": "active",
+      "lastActiveAt": "2024-01-12T14:45:00Z",
+      "createdAt": "2023-02-15T00:00:00Z"
+    },
+    {
+      "id": "user_003",
+      "email": "emma.duval@amarise.com",
+      "firstName": "Emma",
+      "lastName": "Duval",
+      "role": "manager",
+      "title": "France Operations Lead",
+      "avatar": null,
+      "timezone": "Europe/Paris",
+      "countries": ["FR", "BE"],
+      "permissions": ["orders", "customers", "inventory"],
+      "status": "active",
+      "lastActiveAt": "2024-01-12T16:00:00Z",
+      "createdAt": "2023-01-10T00:00:00Z"
+    },
+    {
+      "id": "user_004",
+      "email": "olivia.smith@amarise.com",
+      "firstName": "Olivia",
+      "lastName": "Smith",
+      "role": "support",
+      "title": "Customer Support (UK)",
+      "avatar": null,
+      "timezone": "Europe/London",
+      "countries": ["GB", "IE"],
+      "permissions": ["orders.view", "customers.view", "refunds.request"],
+      "status": "active",
+      "lastActiveAt": "2024-01-12T12:30:00Z",
+      "createdAt": "2023-06-01T00:00:00Z"
+    },
+    {
+      "id": "user_005",
+      "email": "alessandro.romano@amarise.com",
+      "firstName": "Alessandro",
+      "lastName": "Romano",
+      "role": "support",
+      "title": "Customer Support (Southern EU)",
+      "avatar": null,
+      "timezone": "Europe/Rome",
+      "countries": ["IT", "ES", "PT"],
+      "permissions": ["orders.view", "customers.view", "refunds.request"],
+      "status": "active",
+      "lastActiveAt": "2024-01-12T11:00:00Z",
+      "createdAt": "2023-08-15T00:00:00Z"
+    },
+    {
+      "id": "user_006",
+      "email": "nina.petersen@amarise.com",
+      "firstName": "Nina",
+      "lastName": "Petersen",
+      "role": "viewer",
+      "title": "Analytics Intern",
+      "avatar": null,
+      "timezone": "Europe/Copenhagen",
+      "countries": [],
+      "permissions": ["analytics.view", "reports.view"],
+      "status": "active",
+      "lastActiveAt": "2024-01-11T17:00:00Z",
+      "createdAt": "2024-01-02T00:00:00Z"
+    },
+    {
+      "id": "user_007",
+      "email": "former.employee@amarise.com",
+      "firstName": "Former",
+      "lastName": "Employee",
+      "role": "support",
+      "title": "Ex-Support Agent",
+      "avatar": null,
+      "timezone": "Europe/Paris",
+      "countries": [],
+      "permissions": [],
+      "status": "inactive",
+      "lastActiveAt": "2023-12-15T10:00:00Z",
+      "createdAt": "2023-03-01T00:00:00Z",
+      "deactivatedAt": "2023-12-31T23:59:59Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "admin",
+      "name": "Administrator",
+      "description": "Full access to all systems and settings",
+      "permissions": ["all"],
+      "canAssign": false,
+      "memberCount": 1
+    },
+    {
+      "id": "manager",
+      "name": "Regional Manager",
+      "description": "Manage orders, customers, and inventory for assigned countries",
+      "permissions": ["orders", "customers", "inventory", "refunds", "reports.view"],
+      "canAssign": true,
+      "memberCount": 2
+    },
+    {
+      "id": "support",
+      "name": "Customer Support",
+      "description": "Handle customer inquiries and request refunds",
+      "permissions": ["orders.view", "customers.view", "refunds.request"],
+      "canAssign": true,
+      "memberCount": 2
+    },
+    {
+      "id": "viewer",
+      "name": "Viewer",
+      "description": "Read-only access to analytics and reports",
+      "permissions": ["analytics.view", "reports.view"],
+      "canAssign": true,
+      "memberCount": 1
+    }
+  ],
+  "activityLog": [
+    {
+      "id": "act_001",
+      "userId": "user_001",
+      "userName": "Sarah Chen",
+      "action": "approved_refund",
+      "resource": "Refund #RF-2024-045",
+      "details": "Approved refund of €245 for order AM-2024-089",
+      "timestamp": "2024-01-12T15:28:00Z",
+      "country": "FR"
+    },
+    {
+      "id": "act_002",
+      "userId": "user_002",
+      "userName": "Marcus Weber",
+      "action": "updated_inventory",
+      "resource": "SKU AMR-LIP-001",
+      "details": "Added 50 units to DE warehouse",
+      "timestamp": "2024-01-12T14:42:00Z",
+      "country": "DE"
+    },
+    {
+      "id": "act_003",
+      "userId": "user_003",
+      "userName": "Emma Duval",
+      "action": "processed_order",
+      "resource": "Order AM-2024-156",
+      "details": "Marked as shipped via DHL Express",
+      "timestamp": "2024-01-12T14:15:00Z",
+      "country": "FR"
+    },
+    {
+      "id": "act_004",
+      "userId": "user_004",
+      "userName": "Olivia Smith",
+      "action": "requested_refund",
+      "resource": "Order AM-2024-142",
+      "details": "Customer reported damaged package",
+      "timestamp": "2024-01-12T12:25:00Z",
+      "country": "GB"
+    },
+    {
+      "id": "act_005",
+      "userId": "user_001",
+      "userName": "Sarah Chen",
+      "action": "shift_handover",
+      "resource": "Shift Notes",
+      "details": "EU morning shift handover completed",
+      "timestamp": "2024-01-12T09:00:00Z",
+      "country": null
+    },
+    {
+      "id": "act_006",
+      "userId": "user_005",
+      "userName": "Alessandro Romano",
+      "action": "customer_note",
+      "resource": "Customer #cust_007",
+      "details": "Updated communication preferences to Italian",
+      "timestamp": "2024-01-11T16:45:00Z",
+      "country": "IT"
+    }
+  ],
+  "handoverNotes": [
+    {
+      "id": "hn_001",
+      "shiftDate": "2024-01-12",
+      "shiftType": "morning",
+      "region": "EU",
+      "createdBy": "user_001",
+      "createdByName": "Sarah Chen",
+      "notes": "1. High volume of orders from DE - monitor fulfillment\n2. Pending refund approval for #RF-2024-044 (awaiting supplier response)\n3. New VIP customer in FR - prioritize first order",
+      "openIssues": 2,
+      "resolvedIssues": 5,
+      "timestamp": "2024-01-12T09:00:00Z"
+    },
+    {
+      "id": "hn_002",
+      "shiftDate": "2024-01-11",
+      "shiftType": "evening",
+      "region": "EU",
+      "createdBy": "user_002",
+      "createdByName": "Marcus Weber",
+      "notes": "1. Inventory sync completed for all DE warehouses\n2. Customer complaint resolved (IT region)\n3. Prepared Q4 regional report draft",
+      "openIssues": 3,
+      "resolvedIssues": 4,
+      "timestamp": "2024-01-11T18:00:00Z"
+    }
+  ]
+}

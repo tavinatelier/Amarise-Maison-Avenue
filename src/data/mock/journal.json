@@ -1,0 +1,93 @@
+{
+  "_comment": "CMS-READY: Journal/blog content. Backend developers will replace with CMS API.",
+  "featured": {
+    "id": "philosophy-of-less",
+    "slug": "philosophy-of-less",
+    "image": "/assets/atelier-silk-dress.jpg",
+    "category": "Featured",
+    "title": "The Philosophy of Less",
+    "excerpt": "In a world saturated with excess, we find solace in simplicity. Our approach to design begins with a question: What truly matters?",
+    "content": "The answer shapes everything we create—from the curve of a vessel to the drape of a garment. Each AMARISÉ piece is born from this philosophy, crafted not to follow trends but to transcend them.",
+    "date": "2024-12-15",
+    "dateFormatted": "December 2024",
+    "author": "AMARISÉ Editorial",
+    "readTime": "5 min read"
+  },
+  "articles": [
+    {
+      "id": "art-of-slow-fashion",
+      "slug": "art-of-slow-fashion",
+      "image": "/assets/atelier-silk-dress.jpg",
+      "category": "Philosophy",
+      "title": "The Art of Slow Fashion",
+      "excerpt": "In a world of instant gratification, we explore why waiting is its own luxury.",
+      "date": "2024-12-01",
+      "dateFormatted": "December 2024",
+      "author": "AMARISÉ Editorial",
+      "readTime": "7 min read"
+    },
+    {
+      "id": "creating-sanctuary",
+      "slug": "creating-sanctuary",
+      "image": "/assets/lifestyle-vessel.jpg",
+      "category": "Lifestyle",
+      "title": "Creating Sanctuary at Home",
+      "excerpt": "How thoughtful design can transform any space into a refuge of calm.",
+      "date": "2024-11-15",
+      "dateFormatted": "November 2024",
+      "author": "AMARISÉ Editorial",
+      "readTime": "6 min read"
+    },
+    {
+      "id": "ritual-of-self-care",
+      "slug": "ritual-of-self-care",
+      "image": "/assets/beauty-lip-ritual.jpg",
+      "category": "Beauty",
+      "title": "The Ritual of Self-Care",
+      "excerpt": "Beyond skincare: understanding beauty as a practice of self-love.",
+      "date": "2024-10-20",
+      "dateFormatted": "October 2024",
+      "author": "AMARISÉ Editorial",
+      "readTime": "5 min read"
+    },
+    {
+      "id": "artisans-of-portugal",
+      "slug": "artisans-of-portugal",
+      "image": "/assets/lifestyle-vessel-detail.jpg",
+      "category": "Craft",
+      "title": "The Artisans of Portugal",
+      "excerpt": "A journey to the workshops where our ceramic vessels come to life.",
+      "date": "2024-09-10",
+      "dateFormatted": "September 2024",
+      "author": "AMARISÉ Editorial",
+      "readTime": "8 min read"
+    },
+    {
+      "id": "seasons-of-silk",
+      "slug": "seasons-of-silk",
+      "image": "/assets/atelier-dress-detail.jpg",
+      "category": "Atelier",
+      "title": "Seasons of Silk",
+      "excerpt": "How our master weavers transform raw silk into flowing elegance.",
+      "date": "2024-08-25",
+      "dateFormatted": "August 2024",
+      "author": "AMARISÉ Editorial",
+      "readTime": "6 min read"
+    }
+  ],
+  "categories": [
+    { "id": "philosophy", "name": "Philosophy", "count": 8 },
+    { "id": "lifestyle", "name": "Lifestyle", "count": 12 },
+    { "id": "beauty", "name": "Beauty", "count": 6 },
+    { "id": "craft", "name": "Craft", "count": 9 },
+    { "id": "atelier", "name": "Atelier", "count": 7 }
+  ],
+  "note": {
+    "caption": "A Note from AMARISÉ",
+    "paragraphs": [
+      "The Journal is our space for reflection—a place where we explore the ideas that inspire us, the craftspeople who move us, and the beauty we find in everyday moments.",
+      "Here, you'll find stories about the artisans behind our products, essays on the philosophy of slow living, and glimpses into the world of AMARISÉ.",
+      "We invite you to linger, to read slowly, to find inspiration for your own journey toward intentional living."
+    ]
+  }
+}

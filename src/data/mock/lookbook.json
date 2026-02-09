@@ -1,0 +1,48 @@
+{
+  "_comment": "CMS-READY: Lookbook entries and editorial image blocks. Backend developers will replace with CMS.",
+  "hero": {
+    "image": "/assets/atelier-lookbook-hero.jpg",
+    "caption": "Lookbook",
+    "title": "Spring/Summer 2025",
+    "subtitle": "A visual meditation on light, movement, and the quiet power of simplicity."
+  },
+  "statement": {
+    "quote": "Each garment tells a story of intention—of fabric chosen for its whisper, of silhouettes that celebrate movement, of colors that speak softly yet resonate deeply."
+  },
+  "entries": [
+    {
+      "id": "look-1",
+      "image": "/assets/atelier-silk-dress.jpg",
+      "title": "Look I",
+      "description": "Élan Silk Dress in Pearl",
+      "productLink": "/atelier/elan-silk-dress"
+    },
+    {
+      "id": "look-2",
+      "image": "/assets/atelier-coat.jpg",
+      "title": "Look II",
+      "description": "Heritage Coat in Midnight",
+      "productLink": "/atelier/collections"
+    },
+    {
+      "id": "look-3",
+      "image": "/assets/atelier-dress-detail.jpg",
+      "title": "Look III",
+      "description": "Detail: Hand-finished Seams",
+      "productLink": null
+    },
+    {
+      "id": "look-4",
+      "image": "/assets/atelier-hero.jpg",
+      "title": "Look IV",
+      "description": "Movement Study",
+      "productLink": null
+    }
+  ],
+  "credits": {
+    "photographer": "Studio AMARISÉ",
+    "styling": "Creative Direction",
+    "location": "Lisbon, Portugal",
+    "season": "Spring/Summer 2025"
+  }
+}

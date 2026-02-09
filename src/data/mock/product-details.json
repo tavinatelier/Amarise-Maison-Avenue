@@ -1,0 +1,390 @@
+{
+  "_comment": "CMS-READY: Full product detail pages. Backend replaces with product API + CMS content blocks.",
+  
+  "veil-lip-ritual": {
+    "id": "veil-lip-ritual",
+    "slug": "signature-lips",
+    "category": "beauty",
+    "status": "active",
+    "isPurchasable": true,
+    
+    "hero": {
+      "caption": "Signature Lips",
+      "title": "Veil Lip Ritual",
+      "subtitle": "A whisper of color, a moment of intention"
+    },
+    
+    "pricing": {
+      "price": 68,
+      "currency": "EUR",
+      "compareAtPrice": null
+    },
+    
+    "images": {
+      "gallery": [
+        "/assets/beauty-lip-ritual.jpg",
+        "/assets/beauty-lip-ritual-2.jpg",
+        "/assets/beauty-texture-swatch.jpg",
+        "/assets/beauty-lip-detail.jpg"
+      ],
+      "featured": "/assets/beauty-lip-ritual.jpg"
+    },
+    
+    "variants": {
+      "type": "shade",
+      "options": [
+        { "id": "nude-whisper", "name": "Nude Whisper", "color": "#D8BFC0", "inStock": true },
+        { "id": "rose-dawn", "name": "Rose Dawn", "color": "#C4A4A4", "inStock": true },
+        { "id": "champagne-veil", "name": "Champagne Veil", "color": "#E8D4C8", "inStock": true },
+        { "id": "terracotta-calm", "name": "Terracotta Calm", "color": "#B8897C", "inStock": false }
+      ],
+      "defaultVariant": "nude-whisper"
+    },
+    
+    "story": {
+      "paragraphs": [
+        "The Veil Lip Ritual is more than a lip product—it is an invitation to pause. Inspired by the quiet elegance of morning light through sheer curtains, this formula delivers a luminous veil of color that enhances rather than masks.",
+        "Each application becomes a small ceremony: the weight of the gold case in your palm, the soft cushion of the applicator, the subtle scent of Bulgarian rose. This is beauty that respects your time and elevates your spirit."
+      ]
+    },
+    
+    "details": {
+      "size": "4.5g / 0.15 oz",
+      "howToUse": "Apply directly from the cushion applicator, starting at the center of lips and blending outward. Layer for deeper color or wear alone for a natural, luminous finish.",
+      "promise": "Vegan. Cruelty-free. Free from parabens, sulfates, and synthetic fragrances. Dermatologist tested."
+    },
+    
+    "ingredients": [
+      {
+        "name": "Rose Damascena Oil",
+        "origin": "Valley of Roses, Bulgaria",
+        "benefit": "Deep hydration with antioxidant protection for visibly softer, more supple lips."
+      },
+      {
+        "name": "Marula Oil",
+        "origin": "Namibian Highlands",
+        "benefit": "Rich in oleic acid and omega fatty acids for lasting moisture and gentle plumping."
+      },
+      {
+        "name": "Vitamin E Complex",
+        "origin": "Swiss Biotech Laboratory",
+        "benefit": "Protects delicate lip skin from environmental stressors while promoting healing."
+      }
+    ],
+    "ingredientsPhilosophy": "We believe in transparency. Every ingredient is chosen for its efficacy, its origin story, and its alignment with our values of purity and sustainability.",
+    
+    "editorial": {
+      "title": "Born from a Single Rose",
+      "image": "/assets/beauty-texture-swatch.jpg",
+      "paragraphs": [
+        "The inspiration for the Veil Lip Ritual came from a single rose petal, caught in morning light. That translucent quality—color that reveals rather than conceals—became our guiding principle.",
+        "We spent three years perfecting the formula, working with master chemists to achieve a texture that feels like silk and a finish that looks like your lips, only better. The result is a product that honors the natural beauty already present.",
+        "The gold case was designed to age gracefully, developing a unique patina over time. It is meant to be kept, cherished, and eventually refilled—a small rebellion against disposability."
+      ]
+    },
+    
+    "relatedProducts": ["radiance-serum", "ritual-collection"],
+    
+    "seo": {
+      "title": "Veil Lip Ritual | AMARISÉ Beauty",
+      "description": "A whisper of color, a moment of intention. The Veil Lip Ritual delivers luminous, veil-like color with deep hydration. Vegan & cruelty-free."
+    }
+  },
+  
+  "radiance-serum": {
+    "id": "radiance-serum",
+    "slug": "radiance-serum",
+    "category": "beauty",
+    "status": "active",
+    "isPurchasable": true,
+    
+    "hero": {
+      "caption": "Skincare Rituals",
+      "title": "Radiance Serum",
+      "subtitle": "Pure luminosity in every drop"
+    },
+    
+    "pricing": {
+      "price": 165,
+      "currency": "EUR",
+      "compareAtPrice": null
+    },
+    
+    "images": {
+      "gallery": [
+        "/assets/beauty-serum.jpg",
+        "/assets/hero-beauty.jpg",
+        "/assets/beauty-collection.jpg"
+      ],
+      "featured": "/assets/beauty-serum.jpg"
+    },
+    
+    "variants": {
+      "type": "size",
+      "options": [
+        { "id": "15ml", "name": "15ml", "price": 95, "inStock": true },
+        { "id": "30ml", "name": "30ml", "price": 165, "inStock": true },
+        { "id": "50ml", "name": "50ml", "price": 240, "inStock": true }
+      ],
+      "defaultVariant": "30ml"
+    },
+    
+    "story": {
+      "paragraphs": [
+        "The Radiance Serum captures the essence of light itself. Developed over five years with leading dermatologists, this concentrated formula works in harmony with your skin's natural renewal process to reveal the luminosity that already exists within.",
+        "Unlike harsh treatments that force change, our serum supports. It listens to your skin, responds to its needs, and gently guides it toward its most radiant expression. This is skincare as conversation, not command."
+      ]
+    },
+    
+    "details": {
+      "size": "30ml / 1.0 oz",
+      "howToUse": "After cleansing, apply 3-4 drops to fingertips. Press gently into skin, allowing the serum to absorb fully before applying moisturizer. Use morning and evening for optimal results.",
+      "bestFor": "All skin types, especially those seeking to address dullness, uneven texture, or early signs of aging.",
+      "promise": "Vegan. Cruelty-free. Free from parabens, sulfates, and synthetic fragrances. Clinically tested."
+    },
+    
+    "ingredients": [
+      {
+        "name": "Hyaluronic Acid Complex",
+        "origin": "Biofermented in Japan",
+        "benefit": "Multi-molecular weight formula penetrates deeply for lasting hydration at every layer."
+      },
+      {
+        "name": "Bakuchiol",
+        "origin": "Psoralea Corylifolia Seeds, India",
+        "benefit": "Nature's alternative to retinol, promoting cell renewal without irritation."
+      },
+      {
+        "name": "Squalane",
+        "origin": "Olive-derived, Spain",
+        "benefit": "Weightless moisture that mimics skin's natural oils for perfect balance."
+      }
+    ],
+    "ingredientsPhilosophy": "Each ingredient is selected for both its scientific efficacy and its story of origin. We trace every component back to its source, ensuring purity at every step.",
+    
+    "editorial": {
+      "title": "Where Nature Meets Innovation",
+      "image": "/assets/beauty-serum.jpg",
+      "paragraphs": [
+        "Our formulation philosophy is simple: start with what nature provides, then enhance it with the best of modern science. The Radiance Serum exemplifies this approach.",
+        "We use a triple-weight hyaluronic acid complex—small molecules that penetrate deeply, medium molecules that plump the mid-layers, and large molecules that seal in moisture at the surface. The result is hydration that works on every level.",
+        "Bakuchiol, our star active, offers the benefits of retinol without the sensitivity. Studies show comparable efficacy in reducing fine lines and improving skin texture, making it perfect for even the most delicate complexions."
+      ]
+    },
+    
+    "relatedProducts": ["veil-lip-ritual", "ritual-collection"],
+    
+    "seo": {
+      "title": "Radiance Serum | AMARISÉ Beauty",
+      "description": "Pure luminosity in every drop. Our Radiance Serum uses triple-weight hyaluronic acid and bakuchiol to reveal your skin's natural glow. Vegan & clinically tested."
+    }
+  },
+  
+  "elan-silk-dress": {
+    "id": "elan-silk-dress",
+    "slug": "elan-silk-dress",
+    "category": "atelier",
+    "status": "active",
+    "isPurchasable": true,
+    "collection": "spring-summer-2024",
+    
+    "hero": {
+      "caption": "Spring/Summer 2024",
+      "title": "Élan Silk Dress",
+      "subtitle": "Flowing elegance for timeless moments"
+    },
+    
+    "pricing": {
+      "price": 1450,
+      "currency": "EUR",
+      "compareAtPrice": null
+    },
+    
+    "images": {
+      "gallery": [
+        "/assets/atelier-silk-dress.jpg",
+        "/assets/atelier-dress-detail.jpg"
+      ],
+      "featured": "/assets/atelier-silk-dress.jpg"
+    },
+    
+    "variants": {
+      "type": "size",
+      "options": [
+        { "id": "xs", "name": "XS", "inStock": true },
+        { "id": "s", "name": "S", "inStock": true },
+        { "id": "m", "name": "M", "inStock": true },
+        { "id": "l", "name": "L", "inStock": false },
+        { "id": "xl", "name": "XL", "inStock": true }
+      ],
+      "defaultVariant": "m"
+    },
+    
+    "story": {
+      "paragraphs": [
+        "The Élan Silk Dress is a study in movement. Cut from a single bolt of Italian silk, it drapes the body with weightless precision—structured enough to hold its shape, fluid enough to dance with every step.",
+        "Each dress is hand-finished in our Lisbon atelier, where artisans spend six hours on the invisible details: the perfectly rolled hem, the discreet silk-covered buttons, the internal stays that create that effortless silhouette."
+      ]
+    },
+    
+    "details": {
+      "composition": "100% Italian Mulberry Silk",
+      "care": "Dry clean only. Store on padded hanger.",
+      "sizing": "Runs true to size. See size guide for measurements.",
+      "craftsmanship": "Hand-finished in Lisbon. 6+ hours per garment."
+    },
+    
+    "editorial": {
+      "title": "The Art of the Invisible",
+      "image": "/assets/atelier-dress-detail.jpg",
+      "paragraphs": [
+        "True luxury is often invisible. It lives in the weight of the fabric against your skin, in the way a garment moves with you rather than against you, in the knowledge that every stitch was placed with intention.",
+        "The Élan embodies this philosophy. From the outside, you see a simple, elegant dress. But wear it, and you understand: the way it falls from the shoulder, the hidden silk lining that prevents cling, the careful balance of the hem that allows it to flow without billowing."
+      ]
+    },
+    
+    "relatedProducts": ["heritage-coat"],
+    
+    "seo": {
+      "title": "Élan Silk Dress | AMARISÉ Atelier",
+      "description": "Flowing elegance for timeless moments. The Élan Silk Dress is cut from Italian mulberry silk and hand-finished in our Lisbon atelier. Free alterations available."
+    }
+  },
+  
+  "calma-vessel": {
+    "id": "calma-vessel",
+    "slug": "calma-vessel",
+    "category": "lifestyle",
+    "status": "active",
+    "isPurchasable": true,
+    
+    "hero": {
+      "caption": "Objects of Meaning",
+      "title": "Calma Ceramic Vessel",
+      "subtitle": "Handcrafted serenity"
+    },
+    
+    "pricing": {
+      "price": 280,
+      "currency": "EUR",
+      "compareAtPrice": null
+    },
+    
+    "images": {
+      "gallery": [
+        "/assets/lifestyle-vessel.jpg",
+        "/assets/lifestyle-vessel-detail.jpg"
+      ],
+      "featured": "/assets/lifestyle-vessel.jpg"
+    },
+    
+    "variants": {
+      "type": "finish",
+      "options": [
+        { "id": "matte-sand", "name": "Matte Sand", "inStock": true },
+        { "id": "glazed-ivory", "name": "Glazed Ivory", "inStock": true },
+        { "id": "raw-terracotta", "name": "Raw Terracotta", "inStock": false }
+      ],
+      "defaultVariant": "matte-sand"
+    },
+    
+    "story": {
+      "paragraphs": [
+        "The Calma Vessel is born from earth and intention. Each piece is wheel-thrown by master ceramicist Ana Santos in her Porto studio, then left to dry slowly over three weeks before its first firing.",
+        "No two vessels are identical—subtle variations in form and glaze are not flaws but fingerprints, evidence of the human hand that shaped it. This is not mass production masquerading as craft. This is craft, pure and simple."
+      ]
+    },
+    
+    "details": {
+      "dimensions": "H: 28cm, D: 18cm",
+      "material": "Portuguese stoneware clay",
+      "care": "Not waterproof in raw finish. Wipe with dry cloth. Glazed finish is water-resistant.",
+      "origin": "Handcrafted in Porto, Portugal"
+    },
+    
+    "editorial": {
+      "title": "The Maker's Hand",
+      "image": "/assets/lifestyle-vessel-detail.jpg",
+      "paragraphs": [
+        "Ana Santos has been working with clay for forty years. Her hands know the material intimately—when to push, when to pull, when to let the clay find its own form.",
+        "For the Calma collection, she drew inspiration from the coastline near her studio: the smooth stones polished by decades of waves, the muted palette of sand and sea foam, the perfect imperfection of natural forms."
+      ]
+    },
+    
+    "relatedProducts": ["lumiere-candle"],
+    
+    "seo": {
+      "title": "Calma Ceramic Vessel | AMARISÉ Lifestyle",
+      "description": "Handcrafted serenity. The Calma Vessel is wheel-thrown by master ceramicist Ana Santos in Porto, Portugal. Each piece is unique."
+    }
+  },
+  
+  "lumiere-candle": {
+    "id": "lumiere-candle",
+    "slug": "lumiere-candle",
+    "category": "lifestyle",
+    "status": "active",
+    "isPurchasable": true,
+    
+    "hero": {
+      "caption": "Ritual Objects",
+      "title": "Lumière Scented Candle",
+      "subtitle": "Warm amber & sandalwood"
+    },
+    
+    "pricing": {
+      "price": 95,
+      "currency": "EUR",
+      "compareAtPrice": null
+    },
+    
+    "images": {
+      "gallery": [
+        "/assets/lifestyle-candle.jpg",
+        "/assets/lifestyle-candle-detail.jpg"
+      ],
+      "featured": "/assets/lifestyle-candle.jpg"
+    },
+    
+    "variants": {
+      "type": "scent",
+      "options": [
+        { "id": "amber-sandalwood", "name": "Warm Amber & Sandalwood", "inStock": true },
+        { "id": "fig-cypress", "name": "Fig Leaf & Cypress", "inStock": true },
+        { "id": "rose-oud", "name": "Damask Rose & Oud", "inStock": true }
+      ],
+      "defaultVariant": "amber-sandalwood"
+    },
+    
+    "story": {
+      "paragraphs": [
+        "The Lumière candle is an invitation to slow down. Each evening, as you light the wick, you mark the transition from day to night—from doing to being.",
+        "The scent was developed with master perfumer Jean-Claude Ellena over eighteen months. We sought a fragrance that would be present without overwhelming, that would create atmosphere without announcing itself."
+      ]
+    },
+    
+    "details": {
+      "burnTime": "60 hours",
+      "weight": "300g",
+      "wax": "100% natural plant wax blend",
+      "wick": "Cotton wick, lead-free",
+      "vessel": "Hand-blown glass, reusable"
+    },
+    
+    "editorial": {
+      "title": "The Art of Atmosphere",
+      "image": "/assets/lifestyle-candle-detail.jpg",
+      "paragraphs": [
+        "Scent is the most intimate of senses, the one most closely linked to memory and emotion. A single note can transport you to another time, another place, another state of mind.",
+        "For Lumière, we chose notes that speak of warmth and sanctuary: amber for its golden depth, sandalwood for its meditative calm, a whisper of vanilla for comfort without cloying sweetness."
+      ]
+    },
+    
+    "relatedProducts": ["calma-vessel"],
+    
+    "seo": {
+      "title": "Lumière Scented Candle | AMARISÉ Lifestyle",
+      "description": "Warm amber & sandalwood. The Lumière candle burns for 60 hours, transforming your space into a sanctuary. 100% natural plant wax."
+    }
+  }
+}

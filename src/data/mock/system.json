@@ -1,0 +1,159 @@
+{
+  "globalStatus": {
+    "systemOnline": true,
+    "maintenanceMode": false,
+    "incidentActive": false,
+    "lastHealthCheck": "2024-01-12T16:00:00Z"
+  },
+  "killSwitch": {
+    "enabled": false,
+    "lastTriggered": null,
+    "triggeredBy": null,
+    "reason": null
+  },
+  "countryControls": [
+    {
+      "countryCode": "FR",
+      "country": "France",
+      "salesEnabled": true,
+      "checkoutEnabled": true,
+      "refundsEnabled": true,
+      "newRegistrationsEnabled": true,
+      "notes": ""
+    },
+    {
+      "countryCode": "DE",
+      "country": "Germany",
+      "salesEnabled": true,
+      "checkoutEnabled": true,
+      "refundsEnabled": true,
+      "newRegistrationsEnabled": true,
+      "notes": ""
+    },
+    {
+      "countryCode": "GB",
+      "country": "United Kingdom",
+      "salesEnabled": true,
+      "checkoutEnabled": true,
+      "refundsEnabled": true,
+      "newRegistrationsEnabled": true,
+      "notes": "Post-Brexit VAT handling active"
+    },
+    {
+      "countryCode": "IT",
+      "country": "Italy",
+      "salesEnabled": true,
+      "checkoutEnabled": true,
+      "refundsEnabled": true,
+      "newRegistrationsEnabled": true,
+      "notes": ""
+    },
+    {
+      "countryCode": "ES",
+      "country": "Spain",
+      "salesEnabled": true,
+      "checkoutEnabled": true,
+      "refundsEnabled": true,
+      "newRegistrationsEnabled": true,
+      "notes": ""
+    },
+    {
+      "countryCode": "NL",
+      "country": "Netherlands",
+      "salesEnabled": true,
+      "checkoutEnabled": true,
+      "refundsEnabled": true,
+      "newRegistrationsEnabled": true,
+      "notes": ""
+    }
+  ],
+  "featureFlags": [
+    {
+      "id": "new_checkout_flow",
+      "name": "New Checkout Flow",
+      "description": "Streamlined single-page checkout experience",
+      "enabled": false,
+      "enabledForCountries": [],
+      "rolloutPercentage": 0,
+      "createdAt": "2024-01-05T10:00:00Z"
+    },
+    {
+      "id": "ai_recommendations",
+      "name": "AI Product Recommendations",
+      "description": "Machine learning powered product suggestions",
+      "enabled": true,
+      "enabledForCountries": ["FR", "DE"],
+      "rolloutPercentage": 100,
+      "createdAt": "2023-11-15T10:00:00Z"
+    },
+    {
+      "id": "gift_wrapping",
+      "name": "Gift Wrapping Option",
+      "description": "Premium gift wrapping at checkout",
+      "enabled": true,
+      "enabledForCountries": ["FR", "DE", "GB", "IT", "ES", "NL"],
+      "rolloutPercentage": 100,
+      "createdAt": "2023-09-01T10:00:00Z"
+    },
+    {
+      "id": "express_checkout",
+      "name": "Express Checkout",
+      "description": "One-click checkout for returning customers",
+      "enabled": false,
+      "enabledForCountries": [],
+      "rolloutPercentage": 0,
+      "createdAt": "2024-01-10T10:00:00Z"
+    },
+    {
+      "id": "loyalty_program",
+      "name": "Loyalty Program",
+      "description": "Points-based rewards for purchases",
+      "enabled": false,
+      "enabledForCountries": [],
+      "rolloutPercentage": 0,
+      "createdAt": "2024-01-08T10:00:00Z"
+    }
+  ],
+  "maintenanceSchedule": [
+    {
+      "id": "maint_001",
+      "title": "Database Optimization",
+      "description": "Scheduled database maintenance and index optimization",
+      "scheduledStart": "2024-01-20T02:00:00Z",
+      "scheduledEnd": "2024-01-20T04:00:00Z",
+      "affectedServices": ["checkout", "orders"],
+      "status": "scheduled"
+    },
+    {
+      "id": "maint_002",
+      "title": "Payment Gateway Update",
+      "description": "Updating payment processor integration",
+      "scheduledStart": "2024-01-25T03:00:00Z",
+      "scheduledEnd": "2024-01-25T05:00:00Z",
+      "affectedServices": ["payments"],
+      "status": "scheduled"
+    }
+  ],
+  "emergencyBanner": {
+    "enabled": false,
+    "message": "",
+    "type": "info",
+    "showOnPages": ["all"],
+    "dismissible": true,
+    "lastUpdated": null,
+    "updatedBy": null
+  },
+  "systemHealth": {
+    "api": { "status": "healthy", "latency": 45, "uptime": 99.98 },
+    "database": { "status": "healthy", "latency": 12, "uptime": 99.99 },
+    "payments": { "status": "healthy", "latency": 180, "uptime": 99.95 },
+    "email": { "status": "healthy", "latency": 250, "uptime": 99.90 },
+    "cdn": { "status": "healthy", "latency": 25, "uptime": 99.99 }
+  },
+  "auditSettings": {
+    "retentionDays": 365,
+    "logLevel": "info",
+    "sensitiveFieldsMasked": true,
+    "exportEnabled": true
+  }
+}

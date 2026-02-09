@@ -1,0 +1,143 @@
+{
+  "overview": {
+    "period": "2024-01",
+    "grossRevenue": 285400,
+    "netRevenue": 242090,
+    "refunds": 8750,
+    "taxesCollected": 34560,
+    "shippingRevenue": 12800,
+    "discountsApplied": 15200,
+    "currency": "EUR"
+  },
+  "byCountry": [
+    {
+      "country": "France",
+      "countryCode": "FR",
+      "grossRevenue": 89500,
+      "netRevenue": 76075,
+      "orders": 145,
+      "refunds": 2800,
+      "taxRate": 20,
+      "taxesCollected": 12650,
+      "avgOrderValue": 617
+    },
+    {
+      "country": "Germany",
+      "countryCode": "DE",
+      "grossRevenue": 72400,
+      "netRevenue": 61540,
+      "orders": 112,
+      "refunds": 1950,
+      "taxRate": 19,
+      "taxesCollected": 9850,
+      "avgOrderValue": 646
+    },
+    {
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "grossRevenue": 58200,
+      "netRevenue": 49470,
+      "orders": 89,
+      "refunds": 2100,
+      "taxRate": 20,
+      "taxesCollected": 5820,
+      "avgOrderValue": 654
+    },
+    {
+      "country": "Italy",
+      "countryCode": "IT",
+      "grossRevenue": 38500,
+      "netRevenue": 32725,
+      "orders": 64,
+      "refunds": 1200,
+      "taxRate": 22,
+      "taxesCollected": 4620,
+      "avgOrderValue": 602
+    },
+    {
+      "country": "Spain",
+      "countryCode": "ES",
+      "grossRevenue": 18200,
+      "netRevenue": 15470,
+      "orders": 32,
+      "refunds": 500,
+      "taxRate": 21,
+      "taxesCollected": 1250,
+      "avgOrderValue": 569
+    },
+    {
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "grossRevenue": 8600,
+      "netRevenue": 7310,
+      "orders": 15,
+      "refunds": 200,
+      "taxRate": 21,
+      "taxesCollected": 370,
+      "avgOrderValue": 573
+    }
+  ],
+  "monthlyTrend": [
+    { "month": "2023-07", "grossRevenue": 198500, "netRevenue": 168725, "refunds": 5200 },
+    { "month": "2023-08", "grossRevenue": 185200, "netRevenue": 157420, "refunds": 4800 },
+    { "month": "2023-09", "grossRevenue": 215800, "netRevenue": 183430, "refunds": 6100 },
+    { "month": "2023-10", "grossRevenue": 242100, "netRevenue": 205785, "refunds": 7200 },
+    { "month": "2023-11", "grossRevenue": 298500, "netRevenue": 253725, "refunds": 9800 },
+    { "month": "2023-12", "grossRevenue": 385200, "netRevenue": 327420, "refunds": 12500 },
+    { "month": "2024-01", "grossRevenue": 285400, "netRevenue": 242090, "refunds": 8750 }
+  ],
+  "quarterlyReports": [
+    {
+      "quarter": "Q3 2023",
+      "startDate": "2023-07-01",
+      "endDate": "2023-09-30",
+      "grossRevenue": 599500,
+      "netRevenue": 509575,
+      "refunds": 16100,
+      "status": "finalized"
+    },
+    {
+      "quarter": "Q4 2023",
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-31",
+      "grossRevenue": 925800,
+      "netRevenue": 786930,
+      "refunds": 29500,
+      "status": "finalized"
+    },
+    {
+      "quarter": "Q1 2024",
+      "startDate": "2024-01-01",
+      "endDate": "2024-03-31",
+      "grossRevenue": 285400,
+      "netRevenue": 242090,
+      "refunds": 8750,
+      "status": "in_progress"
+    }
+  ],
+  "taxRates": {
+    "FR": { "standard": 20, "reduced": 10, "superReduced": 5.5 },
+    "DE": { "standard": 19, "reduced": 7 },
+    "GB": { "standard": 20, "reduced": 5, "zero": 0 },
+    "IT": { "standard": 22, "reduced": 10, "superReduced": 4 },
+    "ES": { "standard": 21, "reduced": 10, "superReduced": 4 },
+    "NL": { "standard": 21, "reduced": 9 }
+  },
+  "currencyImpact": {
+    "baseCurrency": "EUR",
+    "rates": {
+      "GBP": { "rate": 0.86, "change": -1.2 },
+      "SEK": { "rate": 11.25, "change": 0.8 },
+      "CHF": { "rate": 0.94, "change": -0.3 }
+    },
+    "hedgingPositions": [
+      { "currency": "GBP", "amount": 50000, "expiresAt": "2024-03-31" }
+    ]
+  },
+  "paymentMethods": {
+    "card": { "transactions": 385, "volume": 215800, "percentage": 75.6 },
+    "paypal": { "transactions": 52, "volume": 38500, "percentage": 13.5 },
+    "klarna": { "transactions": 28, "volume": 22100, "percentage": 7.7 },
+    "bankTransfer": { "transactions": 12, "volume": 9000, "percentage": 3.2 }
+  }
+}

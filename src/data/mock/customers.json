@@ -1,0 +1,313 @@
+{
+  "customers": [
+    {
+      "id": "cust_001",
+      "email": "alexandra.dubois@email.com",
+      "firstName": "Alexandra",
+      "lastName": "Dubois",
+      "phone": "+33 6 12 34 56 78",
+      "country": "France",
+      "countryCode": "FR",
+      "currency": "EUR",
+      "totalOrders": 12,
+      "totalSpent": 8450,
+      "tier": "vip",
+      "createdAt": "2023-03-15T10:30:00Z",
+      "lastOrderAt": "2024-01-10T14:22:00Z",
+      "gdprStatus": {
+        "consentMarketing": true,
+        "consentAnalytics": true,
+        "dataExportRequested": false,
+        "deletionRequested": false,
+        "lastUpdated": "2024-01-05T09:00:00Z"
+      },
+      "riskLevel": "low",
+      "notes": "VIP client since 2023. Prefers express shipping.",
+      "addresses": [
+        {
+          "id": "addr_001",
+          "type": "shipping",
+          "line1": "42 Rue de Rivoli",
+          "city": "Paris",
+          "postalCode": "75001",
+          "country": "France",
+          "isDefault": true
+        }
+      ],
+      "orders": [
+        {
+          "id": "ord_2024_001",
+          "orderNumber": "AM-2024-001",
+          "total": 890,
+          "status": "delivered",
+          "createdAt": "2024-01-10T14:22:00Z"
+        },
+        {
+          "id": "ord_2023_045",
+          "orderNumber": "AM-2023-045",
+          "total": 1250,
+          "status": "delivered",
+          "createdAt": "2023-12-05T11:15:00Z"
+        },
+        {
+          "id": "ord_2023_032",
+          "orderNumber": "AM-2023-032",
+          "total": 675,
+          "status": "delivered",
+          "createdAt": "2023-10-18T16:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "cust_002",
+      "email": "sofia.andersson@email.se",
+      "firstName": "Sofia",
+      "lastName": "Andersson",
+      "phone": "+46 70 123 45 67",
+      "country": "Sweden",
+      "countryCode": "SE",
+      "currency": "SEK",
+      "totalOrders": 5,
+      "totalSpent": 4200,
+      "tier": "standard",
+      "createdAt": "2023-08-22T09:15:00Z",
+      "lastOrderAt": "2024-01-08T10:30:00Z",
+      "gdprStatus": {
+        "consentMarketing": false,
+        "consentAnalytics": true,
+        "dataExportRequested": false,
+        "deletionRequested": false,
+        "lastUpdated": "2023-11-20T14:00:00Z"
+      },
+      "riskLevel": "low",
+      "notes": "",
+      "addresses": [
+        {
+          "id": "addr_002",
+          "type": "shipping",
+          "line1": "Strandvägen 15",
+          "city": "Stockholm",
+          "postalCode": "114 56",
+          "country": "Sweden",
+          "isDefault": true
+        }
+      ],
+      "orders": [
+        {
+          "id": "ord_2024_002",
+          "orderNumber": "AM-2024-002",
+          "total": 450,
+          "status": "shipped",
+          "createdAt": "2024-01-08T10:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "cust_003",
+      "email": "maria.santos@email.pt",
+      "firstName": "Maria",
+      "lastName": "Santos",
+      "phone": "+351 91 234 5678",
+      "country": "Portugal",
+      "countryCode": "PT",
+      "currency": "EUR",
+      "totalOrders": 8,
+      "totalSpent": 5680,
+      "tier": "vip",
+      "createdAt": "2023-05-10T14:20:00Z",
+      "lastOrderAt": "2024-01-06T09:45:00Z",
+      "gdprStatus": {
+        "consentMarketing": true,
+        "consentAnalytics": true,
+        "dataExportRequested": true,
+        "deletionRequested": false,
+        "lastUpdated": "2024-01-02T11:30:00Z"
+      },
+      "riskLevel": "low",
+      "notes": "Requested data export on Jan 2, 2024. Pending fulfillment.",
+      "addresses": [
+        {
+          "id": "addr_003",
+          "type": "shipping",
+          "line1": "Rua Augusta 88",
+          "city": "Lisbon",
+          "postalCode": "1100-053",
+          "country": "Portugal",
+          "isDefault": true
+        }
+      ],
+      "orders": []
+    },
+    {
+      "id": "cust_004",
+      "email": "james.wilson@email.co.uk",
+      "firstName": "James",
+      "lastName": "Wilson",
+      "phone": "+44 7700 900123",
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "currency": "GBP",
+      "totalOrders": 3,
+      "totalSpent": 2100,
+      "tier": "standard",
+      "createdAt": "2023-11-01T16:00:00Z",
+      "lastOrderAt": "2024-01-05T12:00:00Z",
+      "gdprStatus": {
+        "consentMarketing": true,
+        "consentAnalytics": false,
+        "dataExportRequested": false,
+        "deletionRequested": false,
+        "lastUpdated": "2023-11-01T16:00:00Z"
+      },
+      "riskLevel": "medium",
+      "notes": "Previous chargeback dispute resolved. Monitor future orders.",
+      "addresses": [
+        {
+          "id": "addr_004",
+          "type": "shipping",
+          "line1": "15 Piccadilly",
+          "city": "London",
+          "postalCode": "W1J 0DP",
+          "country": "United Kingdom",
+          "isDefault": true
+        }
+      ],
+      "orders": []
+    },
+    {
+      "id": "cust_005",
+      "email": "anna.mueller@email.de",
+      "firstName": "Anna",
+      "lastName": "Müller",
+      "phone": "+49 151 12345678",
+      "country": "Germany",
+      "countryCode": "DE",
+      "currency": "EUR",
+      "totalOrders": 15,
+      "totalSpent": 12500,
+      "tier": "elite",
+      "createdAt": "2022-12-01T08:00:00Z",
+      "lastOrderAt": "2024-01-12T15:30:00Z",
+      "gdprStatus": {
+        "consentMarketing": true,
+        "consentAnalytics": true,
+        "dataExportRequested": false,
+        "deletionRequested": false,
+        "lastUpdated": "2024-01-01T00:00:00Z"
+      },
+      "riskLevel": "low",
+      "notes": "Elite tier client. Priority support. Complimentary gift wrapping.",
+      "addresses": [
+        {
+          "id": "addr_005",
+          "type": "shipping",
+          "line1": "Maximilianstraße 22",
+          "city": "Munich",
+          "postalCode": "80539",
+          "country": "Germany",
+          "isDefault": true
+        }
+      ],
+      "orders": []
+    },
+    {
+      "id": "cust_006",
+      "email": "claire.bernard@email.be",
+      "firstName": "Claire",
+      "lastName": "Bernard",
+      "phone": "+32 471 23 45 67",
+      "country": "Belgium",
+      "countryCode": "BE",
+      "currency": "EUR",
+      "totalOrders": 2,
+      "totalSpent": 780,
+      "tier": "new",
+      "createdAt": "2024-01-02T11:00:00Z",
+      "lastOrderAt": "2024-01-09T14:15:00Z",
+      "gdprStatus": {
+        "consentMarketing": false,
+        "consentAnalytics": false,
+        "dataExportRequested": false,
+        "deletionRequested": false,
+        "lastUpdated": "2024-01-02T11:00:00Z"
+      },
+      "riskLevel": "low",
+      "notes": "",
+      "addresses": [
+        {
+          "id": "addr_006",
+          "type": "shipping",
+          "line1": "Avenue Louise 150",
+          "city": "Brussels",
+          "postalCode": "1050",
+          "country": "Belgium",
+          "isDefault": true
+        }
+      ],
+      "orders": []
+    },
+    {
+      "id": "cust_007",
+      "email": "lorenzo.rossi@email.it",
+      "firstName": "Lorenzo",
+      "lastName": "Rossi",
+      "phone": "+39 333 123 4567",
+      "country": "Italy",
+      "countryCode": "IT",
+      "currency": "EUR",
+      "totalOrders": 7,
+      "totalSpent": 6200,
+      "tier": "vip",
+      "createdAt": "2023-04-18T13:45:00Z",
+      "lastOrderAt": "2024-01-11T10:00:00Z",
+      "gdprStatus": {
+        "consentMarketing": true,
+        "consentAnalytics": true,
+        "dataExportRequested": false,
+        "deletionRequested": false,
+        "lastUpdated": "2023-12-15T09:00:00Z"
+      },
+      "riskLevel": "low",
+      "notes": "Prefers Italian language communications.",
+      "addresses": [],
+      "orders": []
+    },
+    {
+      "id": "cust_008",
+      "email": "test.flagged@email.com",
+      "firstName": "Test",
+      "lastName": "Account",
+      "phone": null,
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "currency": "EUR",
+      "totalOrders": 1,
+      "totalSpent": 250,
+      "tier": "standard",
+      "createdAt": "2024-01-10T08:00:00Z",
+      "lastOrderAt": "2024-01-10T08:05:00Z",
+      "gdprStatus": {
+        "consentMarketing": false,
+        "consentAnalytics": false,
+        "dataExportRequested": false,
+        "deletionRequested": true,
+        "lastUpdated": "2024-01-12T10:00:00Z"
+      },
+      "riskLevel": "high",
+      "notes": "Flagged for review. Multiple failed payment attempts. Deletion requested.",
+      "addresses": [],
+      "orders": []
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "perPage": 20,
+    "total": 8,
+    "totalPages": 1
+  },
+  "filters": {
+    "tiers": ["new", "standard", "vip", "elite"],
+    "riskLevels": ["low", "medium", "high"],
+    "countries": ["France", "Sweden", "Portugal", "United Kingdom", "Germany", "Belgium", "Italy", "Netherlands"]
+  }
+}

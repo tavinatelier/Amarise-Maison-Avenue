@@ -1,0 +1,153 @@
+{
+  "funnel": {
+    "period": "2024-01",
+    "stages": [
+      { "name": "Sessions", "value": 45200, "dropOff": 0 },
+      { "name": "Product Views", "value": 28500, "dropOff": 36.9 },
+      { "name": "Add to Cart", "value": 8420, "dropOff": 70.5 },
+      { "name": "Checkout Started", "value": 3150, "dropOff": 62.6 },
+      { "name": "Payment Completed", "value": 2480, "dropOff": 21.3 },
+      { "name": "Order Confirmed", "value": 2450, "dropOff": 1.2 }
+    ],
+    "conversionRate": 5.42,
+    "cartAbandonmentRate": 62.6,
+    "checkoutAbandonmentRate": 21.3
+  },
+  "productPerformance": [
+    {
+      "productId": "prod_001",
+      "title": "Veil Lip Ritual",
+      "category": "Beauty",
+      "views": 8500,
+      "addToCart": 2840,
+      "purchases": 845,
+      "revenue": 76050,
+      "conversionRate": 9.94,
+      "avgRating": 4.8,
+      "returnRate": 2.1
+    },
+    {
+      "productId": "prod_002",
+      "title": "Radiance Serum",
+      "category": "Beauty",
+      "views": 6200,
+      "addToCart": 1985,
+      "purchases": 620,
+      "revenue": 86800,
+      "conversionRate": 10.0,
+      "avgRating": 4.9,
+      "returnRate": 1.5
+    },
+    {
+      "productId": "prod_003",
+      "title": "Élan Silk Dress",
+      "category": "Atelier",
+      "views": 4800,
+      "addToCart": 720,
+      "purchases": 145,
+      "revenue": 65250,
+      "conversionRate": 3.02,
+      "avgRating": 4.7,
+      "returnRate": 8.5
+    },
+    {
+      "productId": "prod_004",
+      "title": "Lumière Candle",
+      "category": "Lifestyle",
+      "views": 3500,
+      "addToCart": 1120,
+      "purchases": 380,
+      "revenue": 22800,
+      "conversionRate": 10.86,
+      "avgRating": 4.6,
+      "returnRate": 0.5
+    },
+    {
+      "productId": "prod_005",
+      "title": "Calma Vessel",
+      "category": "Lifestyle",
+      "views": 2800,
+      "addToCart": 560,
+      "purchases": 185,
+      "revenue": 27750,
+      "conversionRate": 6.61,
+      "avgRating": 4.8,
+      "returnRate": 3.2
+    }
+  ],
+  "countryPerformance": [
+    {
+      "country": "France",
+      "countryCode": "FR",
+      "sessions": 12500,
+      "conversionRate": 6.2,
+      "avgOrderValue": 617,
+      "revenue": 89500,
+      "topProduct": "Veil Lip Ritual",
+      "growth": 12.5
+    },
+    {
+      "country": "Germany",
+      "countryCode": "DE",
+      "sessions": 9800,
+      "conversionRate": 5.8,
+      "avgOrderValue": 646,
+      "revenue": 72400,
+      "topProduct": "Radiance Serum",
+      "growth": 8.2
+    },
+    {
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "sessions": 8200,
+      "conversionRate": 5.4,
+      "avgOrderValue": 654,
+      "revenue": 58200,
+      "topProduct": "Élan Silk Dress",
+      "growth": 15.8
+    },
+    {
+      "country": "Italy",
+      "countryCode": "IT",
+      "sessions": 6500,
+      "conversionRate": 4.9,
+      "avgOrderValue": 602,
+      "revenue": 38500,
+      "topProduct": "Veil Lip Ritual",
+      "growth": 22.4
+    },
+    {
+      "country": "Spain",
+      "countryCode": "ES",
+      "sessions": 4200,
+      "conversionRate": 4.5,
+      "avgOrderValue": 569,
+      "revenue": 18200,
+      "topProduct": "Lumière Candle",
+      "growth": 18.1
+    },
+    {
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "sessions": 2100,
+      "conversionRate": 4.2,
+      "avgOrderValue": 573,
+      "revenue": 8600,
+      "topProduct": "Radiance Serum",
+      "growth": 9.5
+    }
+  ],
+  "timeRanges": ["Today", "Last 7 days", "Last 30 days", "This quarter", "This year", "Custom"],
+  "trafficSources": {
+    "organic": { "sessions": 18500, "percentage": 40.9, "conversionRate": 6.1 },
+    "direct": { "sessions": 12800, "percentage": 28.3, "conversionRate": 5.8 },
+    "social": { "sessions": 8200, "percentage": 18.1, "conversionRate": 4.2 },
+    "email": { "sessions": 3500, "percentage": 7.7, "conversionRate": 8.5 },
+    "paid": { "sessions": 2200, "percentage": 4.9, "conversionRate": 3.8 }
+  },
+  "deviceBreakdown": {
+    "desktop": { "sessions": 22600, "percentage": 50, "conversionRate": 6.2 },
+    "mobile": { "sessions": 19580, "percentage": 43.3, "conversionRate": 4.5 },
+    "tablet": { "sessions": 3020, "percentage": 6.7, "conversionRate": 5.1 }
+  }
+}

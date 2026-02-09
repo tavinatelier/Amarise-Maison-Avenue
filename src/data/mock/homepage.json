@@ -1,0 +1,53 @@
+{
+  "_comment": "CMS-READY: This file contains all homepage content. Backend developers will replace with API calls.",
+  "hero": {
+    "image": "/assets/hero-main.jpg",
+    "caption": "A New Definition of Luxury",
+    "title": "Where Beauty Meets Intention",
+    "subtitle": "Discover a world of refined elegance, where every detail whispers luxury.",
+    "ctaText": "Begin the Journey",
+    "ctaLink": "/beauty"
+  },
+  "statement": {
+    "quote": "In a world of noise, we choose whispers. In a sea of trends, we choose timelessness. AMARISÉ is not just a brand—it is a quiet revolution."
+  },
+  "sections": {
+    "beauty": {
+      "caption": "Beauty",
+      "title": "The Art of the Ritual",
+      "description": "Each product is a ceremony. Each moment, an intention.",
+      "linkText": "Discover Beauty",
+      "href": "/beauty"
+    },
+    "atelier": {
+      "caption": "Atelier",
+      "title": "Crafted with Soul",
+      "description": "Where fabric becomes poetry and silhouettes tell stories.",
+      "linkText": "Explore Atelier",
+      "href": "/atelier"
+    },
+    "lifestyle": {
+      "caption": "Lifestyle",
+      "title": "Objects of Meaning",
+      "description": "Not utilities, but emotional artifacts that elevate the everyday.",
+      "linkText": "Explore Objects",
+      "href": "/lifestyle"
+    }
+  },
+  "editorial": {
+    "caption": "From Our Journal",
+    "title": "The Philosophy of Less",
+    "paragraphs": [
+      "In a world saturated with excess, we find solace in simplicity. Our approach to design begins with a question: What truly matters? The answer shapes everything we create—from the curve of a vessel to the drape of a garment.",
+      "Each AMARISÉ piece is born from this philosophy, crafted not to follow trends but to transcend them. We believe in beauty that lasts, in quality that endures, in design that speaks softly yet resonates deeply."
+    ],
+    "linkText": "Read More Stories →",
+    "href": "/journal"
+  },
+  "newsletter": {
+    "caption": "Join the Ritual",
+    "title": "Be the First to Experience New Arrivals",
+    "placeholder": "Enter your email",
+    "buttonText": "Subscribe"
+  }
+}

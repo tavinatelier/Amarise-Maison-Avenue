@@ -1,0 +1,219 @@
+{
+  "_comment": "CMS-READY: Private client and VIP data. Backend developers will replace with authenticated high-touch client data.",
+  "tiers": {
+    "standard": {
+      "name": "Standard",
+      "description": "Welcome to AMARISÉ",
+      "benefits": [
+        "Complimentary shipping on orders over €500",
+        "Early access to seasonal launches",
+        "Personalized product recommendations"
+      ],
+      "threshold": 0
+    },
+    "gold": {
+      "name": "Gold",
+      "description": "Elevated Experience",
+      "benefits": [
+        "Complimentary express shipping worldwide",
+        "Priority access to limited editions",
+        "Dedicated email support",
+        "Birthday and anniversary recognition",
+        "Exclusive Gold member events"
+      ],
+      "threshold": 5000
+    },
+    "black": {
+      "name": "Black",
+      "description": "Curated Excellence",
+      "benefits": [
+        "Personal style advisor",
+        "Same-day delivery in select cities",
+        "Private shopping appointments",
+        "First access to new collections",
+        "Bespoke alteration services",
+        "Exclusive Black member experiences"
+      ],
+      "threshold": 15000
+    },
+    "private_circle": {
+      "name": "Private Circle",
+      "description": "By Invitation Only",
+      "benefits": [
+        "Dedicated personal concierge",
+        "Home styling consultations",
+        "Bespoke and made-to-measure services",
+        "Private atelier visits",
+        "Commission exclusive pieces",
+        "Access to archive and one-of-kind items",
+        "Invitation to maison events worldwide"
+      ],
+      "threshold": null,
+      "invitationOnly": true
+    }
+  },
+  "privatePreview": {
+    "active": [
+      {
+        "id": "preview_ss25",
+        "title": "Spring/Summer 2025 Private Preview",
+        "description": "An intimate first look at the new collection, available exclusively to our Gold and Black members.",
+        "image": "/assets/atelier-lookbook-hero.jpg",
+        "startsAt": "2025-01-20T10:00:00Z",
+        "endsAt": "2025-01-27T23:59:59Z",
+        "minTier": "gold",
+        "collectionSlug": "ss-2025-preview"
+      }
+    ],
+    "invitations": [
+      {
+        "id": "inv_001",
+        "previewId": "preview_ss25",
+        "status": "accepted",
+        "viewedAt": "2025-01-20T14:32:00Z"
+      }
+    ]
+  },
+  "concierge": {
+    "assignedStylist": {
+      "id": "stylist_001",
+      "name": "Marie Laurent",
+      "title": "Senior Style Advisor",
+      "email": "marie.laurent@amarise.com",
+      "phone": "+33 1 42 65 00 01",
+      "image": "/assets/stylist-marie.jpg",
+      "specialties": ["Atelier", "Evening Wear", "Accessories"],
+      "bio": "With over 15 years in luxury fashion, Marie brings an intuitive understanding of personal style and the art of the wardrobe."
+    },
+    "upcomingAppointments": [
+      {
+        "id": "apt_001",
+        "type": "styling_consultation",
+        "date": "2025-02-05",
+        "time": "14:00",
+        "duration": 60,
+        "location": "Paris Atelier",
+        "stylist": "Marie Laurent",
+        "notes": "Spring wardrobe refresh"
+      }
+    ],
+    "pastAppointments": [
+      {
+        "id": "apt_past_001",
+        "type": "private_shopping",
+        "date": "2024-11-20",
+        "location": "Paris Atelier",
+        "stylist": "Marie Laurent",
+        "summary": "Selected pieces from the Winter collection. Élan Silk Dress in Pearl."
+      }
+    ]
+  },
+  "wardrobeIntelligence": {
+    "totalPieces": 12,
+    "categories": {
+      "atelier": 5,
+      "beauty": 4,
+      "lifestyle": 3
+    },
+    "recommendations": [
+      {
+        "type": "complete_the_look",
+        "basedOn": "Élan Silk Dress",
+        "suggestion": "Heritage Silk Scarf in complementary Pearl",
+        "productId": "prod_silk_scarf_pearl"
+      },
+      {
+        "type": "care_reminder",
+        "item": "Atelier Coat",
+        "message": "Seasonal care recommended before storage",
+        "productId": "prod_atelier_coat"
+      },
+      {
+        "type": "restock",
+        "item": "Radiance Serum",
+        "message": "Based on your purchase date, you may need a new bottle",
+        "productId": "prod_radiance_serum"
+      }
+    ],
+    "styleProfile": {
+      "primaryStyles": ["Refined Minimalism", "Quiet Luxury"],
+      "colorPalette": ["Ivory", "Midnight", "Pearl", "Sand"],
+      "favoriteCategories": ["Atelier", "Beauty"]
+    }
+  },
+  "gifting": {
+    "occasions": [
+      {
+        "type": "birthday",
+        "date": "1985-06-15",
+        "enabled": true
+      },
+      {
+        "type": "anniversary",
+        "date": "2023-06-15",
+        "label": "Membership Anniversary",
+        "enabled": true
+      }
+    ],
+    "giftHistory": [
+      {
+        "id": "gift_001",
+        "recipient": "Sophie Martin",
+        "occasion": "Birthday",
+        "date": "2024-03-20",
+        "item": "Veil Lip Ritual - Dusk Rose",
+        "message": "With love, Alexandra"
+      }
+    ]
+  },
+  "vipApplication": {
+    "fields": [
+      {
+        "name": "fullName",
+        "label": "Full Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "name": "city",
+        "label": "City of Residence",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "interests",
+        "label": "Areas of Interest",
+        "type": "multiselect",
+        "options": ["Atelier", "Beauty", "Lifestyle", "Bespoke Services", "Events"],
+        "required": true
+      },
+      {
+        "name": "currentBrands",
+        "label": "Brands You Currently Enjoy",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "name": "referral",
+        "label": "How Did You Hear About AMARISÉ?",
+        "type": "select",
+        "options": ["Friend or Family", "Press", "Social Media", "Event", "Other"],
+        "required": false
+      }
+    ],
+    "introduction": "The Private Circle is an invitation to experience AMARISÉ at its most personal. Reserved for those who seek not merely products, but a lasting relationship with the maison.",
+    "disclaimer": "Submission of this form does not guarantee acceptance. Our team will review your application and respond within 10 business days."
+  }
+}

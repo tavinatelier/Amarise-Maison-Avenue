@@ -1,0 +1,129 @@
+{
+  "_comment": "CMS-READY: Discovery and exploration data. Backend developers will replace with recommendation engine.",
+  "rituals": [
+    {
+      "id": "morning",
+      "slug": "morning-ritual",
+      "title": "Morning Ritual",
+      "subtitle": "Begin the day with intention",
+      "description": "Products and pieces designed to awaken the senses and set a tone of mindfulness for the hours ahead.",
+      "image": "/assets/hero-beauty.jpg",
+      "productCount": 8,
+      "mood": "energizing"
+    },
+    {
+      "id": "evening",
+      "slug": "evening-ritual",
+      "title": "Evening Ritual",
+      "subtitle": "Unwind and restore",
+      "description": "A curated selection for the quiet hours—when the day releases its hold and calm settles in.",
+      "image": "/assets/lifestyle-candle.jpg",
+      "productCount": 12,
+      "mood": "calming"
+    },
+    {
+      "id": "daily",
+      "slug": "daily-ritual",
+      "title": "Daily Essentials",
+      "subtitle": "Elevate the everyday",
+      "description": "The foundations of intentional living. Objects and products meant to be touched, used, and loved daily.",
+      "image": "/assets/beauty-lip-ritual.jpg",
+      "productCount": 15,
+      "mood": "grounding"
+    },
+    {
+      "id": "complete",
+      "slug": "complete-ritual",
+      "title": "The Complete Ritual",
+      "subtitle": "A curated journey",
+      "description": "Our most comprehensive collections, designed to transform routines into meaningful ceremonies.",
+      "image": "/assets/beauty-collection.jpg",
+      "productCount": 6,
+      "mood": "immersive"
+    }
+  ],
+  "moods": [
+    {
+      "id": "calm",
+      "slug": "find-calm",
+      "title": "Find Calm",
+      "subtitle": "Tranquility in form",
+      "description": "Pieces that quiet the noise. Soft textures, muted tones, and gentle silhouettes.",
+      "image": "/assets/lifestyle-vessel.jpg",
+      "productCount": 14,
+      "palette": ["#F5F5F0", "#E8E4DE", "#D4CFC7"]
+    },
+    {
+      "id": "radiant",
+      "slug": "feel-radiant",
+      "title": "Feel Radiant",
+      "subtitle": "Light from within",
+      "description": "Products designed to enhance your natural luminosity and celebrate inner glow.",
+      "image": "/assets/beauty-serum.jpg",
+      "productCount": 9,
+      "palette": ["#FFF8F0", "#FFE8D6", "#F5DEC4"]
+    },
+    {
+      "id": "elegant",
+      "slug": "embrace-elegance",
+      "title": "Embrace Elegance",
+      "subtitle": "Refined sophistication",
+      "description": "Timeless pieces that speak of quiet confidence and understated luxury.",
+      "image": "/assets/atelier-silk-dress.jpg",
+      "productCount": 11,
+      "palette": ["#1A1A1A", "#3D3D3D", "#5C5C5C"]
+    },
+    {
+      "id": "warm",
+      "slug": "embrace-warmth",
+      "title": "Embrace Warmth",
+      "subtitle": "Comfort and depth",
+      "description": "Rich textures and ambient scents that wrap you in sensory comfort.",
+      "image": "/assets/lifestyle-candle-detail.jpg",
+      "productCount": 8,
+      "palette": ["#8B7355", "#A08060", "#C4A77D"]
+    }
+  ],
+  "stories": [
+    {
+      "id": "self-care",
+      "slug": "story-of-self-care",
+      "title": "The Story of Self-Care",
+      "subtitle": "Beyond skincare",
+      "description": "Explore products born from the belief that caring for yourself is an act of courage.",
+      "image": "/assets/beauty-lip-ritual-2.jpg",
+      "productCount": 10,
+      "relatedArticle": "/journal/ritual-of-self-care"
+    },
+    {
+      "id": "craftsmanship",
+      "slug": "story-of-craft",
+      "title": "The Story of Craft",
+      "subtitle": "Made by hand",
+      "description": "Journey through pieces created by artisans who understand that true luxury cannot be rushed.",
+      "image": "/assets/atelier-dress-detail.jpg",
+      "productCount": 16,
+      "relatedArticle": "/journal/artisans-of-portugal"
+    },
+    {
+      "id": "sanctuary",
+      "slug": "story-of-sanctuary",
+      "title": "The Story of Sanctuary",
+      "subtitle": "Home as haven",
+      "description": "Objects designed to transform spaces into refuges of calm and beauty.",
+      "image": "/assets/lifestyle-vessel-detail.jpg",
+      "productCount": 12,
+      "relatedArticle": "/journal/creating-sanctuary"
+    },
+    {
+      "id": "heritage",
+      "slug": "story-of-heritage",
+      "title": "The Story of Heritage",
+      "subtitle": "Timeless traditions",
+      "description": "Pieces that honor the techniques and wisdom passed down through generations.",
+      "image": "/assets/atelier-coat.jpg",
+      "productCount": 8,
+      "relatedArticle": "/journal/art-of-slow-fashion"
+    }
+  ]
+}
