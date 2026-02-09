@@ -30,6 +30,10 @@ import About from "./pages/About";
 import Sustainability from "./pages/Sustainability";
 import Archive from "./pages/Archive";
 import Discover from "./pages/Discover";
+import Contact from "./pages/Contact";
+import ShippingReturns from "./pages/ShippingReturns";
+import SizeGuide from "./pages/SizeGuide";
+import CustomerCare from "./pages/CustomerCare";
 import RitualDetail from "./pages/discover/RitualDetail";
 import MoodDetail from "./pages/discover/MoodDetail";
 import StoryDetail from "./pages/discover/StoryDetail";
@@ -127,6 +131,10 @@ const App = () => (
             <Route path="/discover/ritual/:slug" element={<RitualDetail />} />
             <Route path="/discover/mood/:slug" element={<MoodDetail />} />
             <Route path="/discover/story/:slug" element={<StoryDetail />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/shipping-returns" element={<ShippingReturns />} />
+            <Route path="/size-guide" element={<SizeGuide />} />
+            <Route path="/customer-care" element={<CustomerCare />} />
 
             {/* Legal Routes */}
             <Route path="/privacy" element={<PrivacyPolicy />} />
