@@ -14,9 +14,17 @@ const discoverLinks = [
 ];
 
 const customerLinks = [
-  { name: "Contact Us", path: "#" },
-  { name: "Shipping & Returns", path: "#" },
-  { name: "Size Guide", path: "#" },
+  { name: "Contact Us", path: "/contact" },
+  { name: "Shipping & Returns", path: "/shipping-returns" },
+  { name: "Size Guide", path: "/size-guide" },
+  { name: "Customer Care", path: "/customer-care" },
+];
+
+const legalLinks = [
+  { name: "Privacy Policy", path: "/privacy" },
+  { name: "Terms of Service", path: "/terms" },
+  { name: "Cookie Policy", path: "/cookies" },
+  { name: "Refund Policy", path: "/refund-policy" },
 ];
 
 const socialLinks = [
@@ -41,6 +49,9 @@ export const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               A global luxury beauty, fashion, and lifestyle brand. Where beauty
               meets intention, and every detail whispers refinement.
+            </p>
+            <p className="text-xs text-muted-foreground/60">
+              A Baalvion Industries Private Limited brand
             </p>
             <div className="flex items-center gap-6">
               {socialLinks.map((social) => (
@@ -135,27 +146,20 @@ export const Footer = () => {
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} AMARISÉ. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <Link
-              to="/values-sustainability"
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Sustainability
-            </Link>
-            <span className="text-muted-foreground/30">|</span>
-            <a
-              href="#"
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <span className="text-muted-foreground/30">|</span>
-            <a
-              href="#"
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Terms of Service
-            </a>
+          <div className="flex items-center gap-4 flex-wrap justify-center">
+            {legalLinks.map((link, i) => (
+              <span key={link.path} className="flex items-center gap-4">
+                <Link
+                  to={link.path}
+                  className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {link.name}
+                </Link>
+                {i < legalLinks.length - 1 && (
+                  <span className="text-muted-foreground/30">|</span>
+                )}
+              </span>
+            ))}
           </div>
         </div>
       </div>
