@@ -82,7 +82,35 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-medium mb-4">6. Data Retention</h2>
+            <h2 className="text-xl font-medium mb-4">6. California Privacy Rights (CCPA)</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              If you are a California resident, you have additional rights under the California Consumer Privacy Act:
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground space-y-2">
+              <li>Right to know what personal information is collected, used, shared, or sold</li>
+              <li>Right to delete personal information held by businesses</li>
+              <li>Right to opt-out of the sale of personal information</li>
+              <li>Right to non-discrimination for exercising your CCPA rights</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              AMARISÉ does not sell personal information. To exercise your rights, please contact us
+              at privacy@amarise.com or submit a request through our{" "}
+              <a href="/data-request" className="text-foreground underline">Data Request Form</a>.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-medium mb-4">7. International Data Transfers</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              We operate in India, the United States, the United Kingdom, and Canada. Your personal
+              information may be transferred to and processed in countries other than your own.
+              We ensure appropriate safeguards are in place, including Standard Contractual Clauses
+              and compliance with applicable data protection frameworks.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-medium mb-4">8. Data Retention</h2>
             <p className="text-muted-foreground leading-relaxed">
               We retain your personal information for as long as necessary to fulfill the purposes 
               outlined in this policy, unless a longer retention period is required by law. Order 
@@ -91,7 +119,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-medium mb-4">7. Security</h2>
+            <h2 className="text-xl font-medium mb-4">9. Security</h2>
             <p className="text-muted-foreground leading-relaxed">
               We implement appropriate technical and organizational measures to protect your personal 
               information against unauthorized access, alteration, disclosure, or destruction. All 
@@ -100,7 +128,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-medium mb-4">8. Contact Us</h2>
+            <h2 className="text-xl font-medium mb-4">10. Contact Us</h2>
             <p className="text-muted-foreground leading-relaxed">
               If you have questions about this Privacy Policy or wish to exercise your data rights, 
               please contact our Data Protection Officer at privacy@amarise.com or submit a request 

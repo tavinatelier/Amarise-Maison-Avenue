@@ -38,6 +38,7 @@ import RitualDetail from "./pages/discover/RitualDetail";
 import MoodDetail from "./pages/discover/MoodDetail";
 import StoryDetail from "./pages/discover/StoryDetail";
 import NotFound from "./pages/NotFound";
+import Maintenance from "./pages/Maintenance";
 
 // Legal pages
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
@@ -189,6 +190,9 @@ const App = () => (
             <Route path="/admin/system" element={<AdminSystem />} />
             <Route path="/admin/system/flags" element={<AdminSystemFlags />} />
             <Route path="/admin/system/maintenance" element={<AdminSystemMaintenance />} />
+
+            {/* Maintenance */}
+            <Route path="/maintenance" element={<Maintenance />} />
 
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
