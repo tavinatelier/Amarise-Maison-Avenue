@@ -18,6 +18,7 @@ import {
   BarChart3,
   RefreshCw,
   Server,
+  FolderTree,
 } from "lucide-react";
 import {
   Sidebar,
@@ -39,6 +40,7 @@ const mainNavItems = [
   { title: "Orders", url: "/admin/orders", icon: ShoppingCart },
   { title: "Customers", url: "/admin/customers", icon: Users },
   { title: "Inventory", url: "/admin/inventory", icon: Warehouse },
+  { title: "Categories", url: "/admin/categories", icon: FolderTree },
   { title: "Refunds", url: "/admin/refunds", icon: RefreshCw },
 ];
 

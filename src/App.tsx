@@ -93,6 +93,13 @@ import AdminReturns from "./pages/admin/Returns";
 import AdminSystem from "./pages/admin/System";
 import AdminSystemFlags from "./pages/admin/SystemFlags";
 import AdminSystemMaintenance from "./pages/admin/SystemMaintenance";
+import AdminCategories from "./pages/admin/Categories";
+import AdminCategoryAnalytics from "./pages/admin/CategoryAnalytics";
+
+// Shop pages
+import PillarPage from "./pages/shop/PillarPage";
+import FamilyPage from "./pages/shop/FamilyPage";
+import ProductDetailPage from "./pages/shop/ProductDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -190,6 +197,13 @@ const App = () => (
             <Route path="/admin/system" element={<AdminSystem />} />
             <Route path="/admin/system/flags" element={<AdminSystemFlags />} />
             <Route path="/admin/system/maintenance" element={<AdminSystemMaintenance />} />
+            <Route path="/admin/categories" element={<AdminCategories />} />
+            <Route path="/admin/categories/analytics" element={<AdminCategoryAnalytics />} />
+
+            {/* Shop Routes */}
+            <Route path="/shop/:pillar" element={<PillarPage />} />
+            <Route path="/shop/:pillar/:family" element={<FamilyPage />} />
+            <Route path="/shop/:pillar/:family/:product" element={<ProductDetailPage />} />
 
             {/* Maintenance */}
             <Route path="/maintenance" element={<Maintenance />} />
