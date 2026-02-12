@@ -40,11 +40,12 @@ export interface MicroCategory {
 
 export interface CatalogProduct {
   id: string;
+  sku: string;
   title: string;
   slug: string;
   pillarSlug: PillarSlug;
   familySlug: string;
-  microCategories: string[]; // 1–3 micro-category slugs
+  microCategories: string[];
   collection?: string;
   edition?: string;
   luxuryTags: LuxuryTag[];
@@ -52,9 +53,17 @@ export interface CatalogProduct {
   currency: string;
   images: string[];
   description: string;
+  headline: string;
+  craftsmanshipStory: string;
   materials?: string;
+  careInstructions?: string;
+  sizeGuide?: string[];
   countryAvailability: CountryCode[];
   inStock: boolean;
+  inventory: number;
+  isFeatured?: boolean;
+  isDraft?: boolean;
+  isLimitedEdition?: boolean;
   createdAt: string;
   updatedAt: string;
 }
