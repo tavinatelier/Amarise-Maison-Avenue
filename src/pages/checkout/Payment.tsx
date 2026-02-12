@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { CheckoutLayout } from "@/components/checkout/CheckoutLayout";
 import { OrderSummary } from "@/components/checkout/OrderSummary";
 import { Button } from "@/components/ui/button";
-import { Lock, CreditCard, Smartphone, Building2, Clock, ChevronRight } from "lucide-react";
+import { Lock, CreditCard, Smartphone, Building2, Clock, ChevronRight, Shield } from "lucide-react";
 import checkoutData from "@/data/mock/checkout.json";
 
 const paymentMethods = [
@@ -70,9 +70,7 @@ export default function Payment() {
           {/* Payment Methods */}
           <div className="lg:col-span-3">
             <h1 className="text-3xl font-light mb-4">Payment</h1>
-            <p className="text-sm text-muted-foreground mb-8">
-              Select your preferred payment method
-            </p>
+            <p className="text-sm text-muted-foreground mb-8">Select your preferred payment method</p>
 
             {/* Security Notice */}
             <div className="flex items-center gap-3 p-4 bg-muted/30 border border-border mb-8">
@@ -96,23 +94,17 @@ export default function Payment() {
                           key={method.id}
                           onClick={() => setSelectedMethod(method.id)}
                           className={`w-full flex items-center gap-4 p-4 border transition-all duration-300 text-left ${
-                            isSelected
-                              ? "border-foreground bg-muted/20"
-                              : "border-border hover:border-foreground/30"
+                            isSelected ? "border-foreground bg-muted/20" : "border-border hover:border-foreground/30"
                           }`}
                         >
-                          <div className={`w-10 h-10 flex items-center justify-center border ${
-                            isSelected ? "border-foreground" : "border-border"
-                          }`}>
+                          <div className={`w-10 h-10 flex items-center justify-center border ${isSelected ? "border-foreground" : "border-border"}`}>
                             <IconComponent className="h-5 w-5" />
                           </div>
                           <div className="flex-1 min-w-0">
                             <p className="text-sm font-medium">{method.name}</p>
                             <p className="text-xs text-muted-foreground">{method.subtitle}</p>
                           </div>
-                          <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                            isSelected ? "border-foreground" : "border-border"
-                          }`}>
+                          <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${isSelected ? "border-foreground" : "border-border"}`}>
                             {isSelected && <div className="w-2.5 h-2.5 rounded-full bg-foreground" />}
                           </div>
                         </button>
@@ -129,10 +121,9 @@ export default function Payment() {
                 <div className="flex items-start gap-3">
                   <ChevronRight className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-medium mb-1">Payment Integration Preview</p>
+                    <p className="text-sm font-medium mb-1">Secure Payment Integration Coming Soon</p>
                     <p className="text-xs text-muted-foreground leading-relaxed">
-                      This is a design preview. The selected payment gateway will be connected
-                      during the integration phase. No real transactions will be processed.
+                      This is a design preview. The selected payment gateway will be connected during the integration phase. No real transactions will be processed.
                     </p>
                   </div>
                 </div>
@@ -159,7 +150,7 @@ export default function Payment() {
               {isProcessing
                 ? "Processing..."
                 : selectedMethod
-                ? `Complete Order — €${cart.total}`
+                ? "Secure Payment Integration Coming Soon"
                 : "Select a payment method"}
             </Button>
 
@@ -171,13 +162,16 @@ export default function Payment() {
             </button>
 
             {/* Trust Badges */}
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-muted-foreground">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Lock className="h-4 w-4" />
                 <span className="text-xs">256-bit SSL</span>
               </div>
               <span className="text-xs text-muted-foreground/30">|</span>
-              <span className="text-xs">PCI DSS Compliant</span>
+              <div className="flex items-center gap-2">
+                <Shield className="h-4 w-4" />
+                <span className="text-xs">PCI DSS Compliant</span>
+              </div>
               <span className="text-xs text-muted-foreground/30">|</span>
               <span className="text-xs">Fraud Protection</span>
             </div>

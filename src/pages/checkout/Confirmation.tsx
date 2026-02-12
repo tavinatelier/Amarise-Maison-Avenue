@@ -1,11 +1,27 @@
 import { Link } from "react-router-dom";
 import { CheckoutLayout } from "@/components/checkout/CheckoutLayout";
 import { Button } from "@/components/ui/button";
-import { Check, Package, Mail } from "lucide-react";
+import { Check, Package, Mail, Shield } from "lucide-react";
 import checkoutData from "@/data/mock/checkout.json";
+import { useMemo } from "react";
+
+function generateOrderId(): string {
+  const prefix = "AMA";
+  const timestamp = Date.now().toString(36).toUpperCase();
+  const random = Math.random().toString(36).substring(2, 6).toUpperCase();
+  return `${prefix}-${timestamp}-${random}`;
+}
 
 export default function Confirmation() {
-  const { cart, mockOrder } = checkoutData;
+  const { cart } = checkoutData;
+
+  const orderId = useMemo(() => generateOrderId(), []);
+
+  const estimatedDate = useMemo(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 5);
+    return d;
+  }, []);
 
   const formatCurrency = (value: number) =>
     new Intl.NumberFormat("en-EU", {
@@ -19,22 +35,18 @@ export default function Confirmation() {
       <div className="container-editorial">
         <div className="max-w-2xl mx-auto text-center">
           {/* Success Icon */}
-          <div className="w-20 h-20 mx-auto mb-8 bg-green-100 rounded-full flex items-center justify-center">
-            <Check className="h-10 w-10 text-green-600" />
+          <div className="w-20 h-20 mx-auto mb-8 border-2 border-accent flex items-center justify-center">
+            <Check className="h-8 w-8 text-accent" />
           </div>
 
-          {/* Thank You Message */}
-          <h1 className="text-3xl md:text-4xl font-light mb-4">
-            Thank You for Your Order
-          </h1>
-          <p className="text-lg text-muted-foreground mb-2">
-            Order #{mockOrder.orderNumber}
-          </p>
+          {/* Thank You */}
+          <h1 className="font-serif text-3xl md:text-4xl mb-4">Thank You for Your Order</h1>
+          <p className="text-lg text-muted-foreground mb-2">Order {orderId}</p>
           <p className="text-muted-foreground mb-8">
-            We've sent a confirmation email with your order details.
+            A confirmation has been sent to your email address.
           </p>
 
-          {/* Order Summary Card */}
+          {/* Order Summary */}
           <div className="border border-border p-8 text-left mb-8">
             <div className="flex items-center gap-3 mb-6">
               <Package className="h-5 w-5" />
@@ -45,21 +57,13 @@ export default function Confirmation() {
               {cart.items.map((item) => (
                 <div key={item.id} className="flex items-center gap-4">
                   <div className="w-16 h-20 bg-muted overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" loading="lazy" />
                   </div>
                   <div className="flex-1">
                     <p className="font-medium">{item.title}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {item.subtitle} × {item.quantity}
-                    </p>
+                    <p className="text-sm text-muted-foreground">{item.subtitle} × {item.quantity}</p>
                   </div>
-                  <p className="font-medium">
-                    {formatCurrency(item.price * item.quantity)}
-                  </p>
+                  <p className="font-medium">{formatCurrency(item.price * item.quantity)}</p>
                 </div>
               ))}
             </div>
@@ -71,10 +75,10 @@ export default function Confirmation() {
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Shipping</span>
-                <span>{cart.shipping === 0 ? "Free" : formatCurrency(cart.shipping)}</span>
+                <span>{cart.shipping === 0 ? "Complimentary" : formatCurrency(cart.shipping)}</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Tax</span>
+                <span className="text-muted-foreground">Tax (estimated)</span>
                 <span>{formatCurrency(cart.tax)}</span>
               </div>
               <div className="flex justify-between font-medium pt-2 border-t border-border">
@@ -84,30 +88,33 @@ export default function Confirmation() {
             </div>
           </div>
 
-          {/* Estimated Delivery */}
+          {/* Delivery */}
           <div className="border border-border p-6 mb-8">
             <div className="flex items-center justify-center gap-3 mb-2">
               <Package className="h-5 w-5 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground">
-                Estimated Delivery
-              </span>
+              <span className="text-sm text-muted-foreground">Estimated Delivery</span>
             </div>
             <p className="text-lg font-medium">
-              {new Date(mockOrder.estimatedDelivery).toLocaleDateString("en-US", {
-                weekday: "long",
-                month: "long",
-                day: "numeric",
-              })}
+              {estimatedDate.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })}
             </p>
           </div>
 
-          {/* Email Note */}
-          <div className="flex items-center justify-center gap-3 text-muted-foreground mb-8">
-            <Mail className="h-5 w-5" />
-            <p className="text-sm">
-              A confirmation email has been sent to your address
-            </p>
+          {/* Trust */}
+          <div className="flex flex-col items-center gap-3 mb-8">
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Mail className="h-4 w-4" />
+              <p className="text-sm">Confirmation email sent</p>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Shield className="h-4 w-4" />
+              <p className="text-sm">Authenticity certificate included with your order</p>
+            </div>
           </div>
+
+          {/* Corporate attribution */}
+          <p className="text-[10px] text-muted-foreground/50 mb-8">
+            Invoice issued by Baalvion Industries Private Limited on behalf of Amarisé Maison Avenue.
+          </p>
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
