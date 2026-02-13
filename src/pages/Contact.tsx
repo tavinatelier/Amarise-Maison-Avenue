@@ -9,6 +9,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1, "Name is required").max(100, "Name must be under 100 characters"),
+  email: z.string().trim().email("Please enter a valid email").max(255, "Email must be under 255 characters"),
+  phone: z.string().trim().regex(/^\+?[1-9]\d{1,14}$/, "Please enter a valid phone number").optional().or(z.literal("")),
+  subject: z.enum(["order", "product", "appointment", "press", "partnership", "other"], { required_error: "Please select a subject" }),
+  message: z.string().trim().min(10, "Message must be at least 10 characters").max(5000, "Message must be under 5000 characters"),
+});
 
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
@@ -55,11 +64,26 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
+
+    const result = contactSchema.safeParse(formData);
+    if (!result.success) {
+      const fieldErrors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
+      });
+      setErrors(fieldErrors);
+      toast.error("Please correct the highlighted fields");
+      return;
+    }
+
     setIsSubmitting(true);
     
-    // Simulate API call
+    // Simulate API call with validated data
     await new Promise(resolve => setTimeout(resolve, 1500));
     
     toast.success("Message sent successfully", {
@@ -126,9 +150,10 @@ export default function Contact() {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Your name"
-                      required
+                      maxLength={100}
                       className="bg-background border-border/50 focus:border-foreground"
                     />
+                    {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address</Label>
@@ -138,9 +163,10 @@ export default function Contact() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="your@email.com"
-                      required
+                      maxLength={255}
                       className="bg-background border-border/50 focus:border-foreground"
                     />
+                    {errors.email && <p className="text-xs text-destructive">{errors.email}</p>}
                   </div>
                 </div>
 
@@ -155,6 +181,7 @@ export default function Contact() {
                       placeholder="+1 234 567 890"
                       className="bg-background border-border/50 focus:border-foreground"
                     />
+                    {errors.phone && <p className="text-xs text-destructive">{errors.phone}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="subject">Subject</Label>
@@ -174,6 +201,7 @@ export default function Contact() {
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
+                    {errors.subject && <p className="text-xs text-destructive">{errors.subject}</p>}
                   </div>
                 </div>
 
@@ -185,9 +213,10 @@ export default function Contact() {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="How can we assist you?"
                     rows={6}
-                    required
+                    maxLength={5000}
                     className="bg-background border-border/50 focus:border-foreground resize-none"
                   />
+                  {errors.message && <p className="text-xs text-destructive">{errors.message}</p>}
                 </div>
 
                 <Button
