@@ -7,6 +7,7 @@ import { RitualBagProvider } from "@/components/ritual-bag/RitualBagContext";
 import { RitualBagDrawer } from "@/components/ritual-bag/RitualBagDrawer";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
 import { ScrollToTopOnNavigate } from "@/components/common/ScrollToTopOnNavigate";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // Public pages
 import Index from "./pages/Index";
@@ -216,6 +217,7 @@ const App = () => (
         </BrowserRouter>
       </RitualBagProvider>
     </TooltipProvider>
+    <SpeedInsights />
   </QueryClientProvider>
 );
 
