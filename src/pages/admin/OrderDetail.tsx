@@ -6,11 +6,19 @@
  */
 
 import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { AdminLayout } from "@/components/admin/AdminLayout";
 import { StatusBadge } from "@/components/admin/StatusBadge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { 
   ArrowLeft, 
   Package, 
@@ -23,6 +31,7 @@ import {
   AlertCircle,
   RefreshCw
 } from "lucide-react";
+import { toast } from "sonner";
 import { format } from "date-fns";
 
 // Mock order data
@@ -127,7 +136,15 @@ const mockOrder = {
 export default function OrderDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const order = mockOrder; // In real app, fetch by id
+  const [orderStatus, setOrderStatus] = useState(mockOrder.status);
+  const order = { ...mockOrder, status: orderStatus };
+
+  const handleStatusChange = (newStatus: string) => {
+    setOrderStatus(newStatus);
+    toast.success(`Order status updated to "${newStatus}"`, {
+      description: "In production, this will update via the order management API.",
+    });
+  };
 
   const statusVariants: Record<string, "default" | "success" | "warning" | "info" | "error"> = {
     pending: "warning",
@@ -158,6 +175,19 @@ export default function OrderDetail() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <Select value={orderStatus} onValueChange={handleStatusChange}>
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder="Update Status" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="pending">Pending</SelectItem>
+                <SelectItem value="processing">Processing</SelectItem>
+                <SelectItem value="shipped">Shipped</SelectItem>
+                <SelectItem value="delivered">Delivered</SelectItem>
+                <SelectItem value="cancelled">Cancelled</SelectItem>
+                <SelectItem value="refunded">Refunded</SelectItem>
+              </SelectContent>
+            </Select>
             <Button variant="outline" onClick={() => navigate(`/admin/refunds?order=${order.id}`)}>
               Issue Refund
             </Button>

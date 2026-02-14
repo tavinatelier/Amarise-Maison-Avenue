@@ -47,6 +47,7 @@ import RefundPolicy from "./pages/legal/RefundPolicy";
 import CookiePolicy from "./pages/legal/CookiePolicy";
 import DataRequest from "./pages/legal/DataRequest";
 import EmailPreferences from "./pages/legal/EmailPreferences";
+import Authenticity from "./pages/legal/Authenticity";
 
 // Checkout pages
 import Cart from "./pages/checkout/Cart";
@@ -151,6 +152,7 @@ const App = () => (
             <Route path="/cookies" element={<CookiePolicy />} />
             <Route path="/data-request" element={<DataRequest />} />
             <Route path="/email-preferences" element={<EmailPreferences />} />
+            <Route path="/authenticity" element={<Authenticity />} />
 
             {/* Checkout Routes */}
             <Route path="/checkout/cart" element={<Cart />} />
