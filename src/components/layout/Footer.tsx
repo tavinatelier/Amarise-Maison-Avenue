@@ -25,6 +25,7 @@ const legalLinks = [
   { name: "Terms of Service", path: "/terms" },
   { name: "Cookie Policy", path: "/cookies" },
   { name: "Refund Policy", path: "/refund-policy" },
+  { name: "Authenticity & Craft", path: "/authenticity" },
 ];
 
 const socialLinks = [
