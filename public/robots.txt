@@ -1,30 +1,10 @@
-User-agent: Googlebot
-Allow: /
-Disallow: /admin
-Disallow: /account
-Disallow: /checkout
-Disallow: /private-client
-Disallow: /maintenance
-
-User-agent: Bingbot
-Allow: /
-Disallow: /admin
-Disallow: /account
-Disallow: /checkout
-Disallow: /private-client
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
 Disallow: /admin
 Disallow: /account
 Disallow: /checkout
 Disallow: /private-client
 Disallow: /maintenance
 
-Sitemap: https://amarise.com/sitemap.xml
+Sitemap: https://amarisemaisonavenue.com/sitemap.xml
