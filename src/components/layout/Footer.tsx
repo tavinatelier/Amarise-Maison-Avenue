@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter } from "lucide-react";
 
 const shopLinks = [
+  { name: "New Arrivals", path: "/new-arrivals" },
+  { name: "Best Sellers", path: "/best-sellers" },
   { name: "Beauty", path: "/beauty" },
   { name: "Atelier", path: "/atelier" },
   { name: "Lifestyle", path: "/lifestyle" },
@@ -11,6 +13,9 @@ const discoverLinks = [
   { name: "Journal", path: "/journal" },
   { name: "About AMARISÉ", path: "/about-amarise" },
   { name: "Sustainability", path: "/values-sustainability" },
+  { name: "Craftsmanship", path: "/craftsmanship" },
+  { name: "Press", path: "/press" },
+  { name: "Care Guides", path: "/care-guides" },
 ];
 
 const customerLinks = [

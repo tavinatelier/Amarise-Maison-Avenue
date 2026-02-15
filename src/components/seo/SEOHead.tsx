@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 /**
  * CMS-READY: SEO Meta Component
  * Backend developers: Replace static props with CMS data
- * Example: const { seo } = usePage(slug)
  */
 
 interface SEOHeadProps {
@@ -16,6 +15,7 @@ interface SEOHeadProps {
   modifiedTime?: string;
   author?: string;
   noIndex?: boolean;
+  hreflang?: Array<{ lang: string; href: string }>;
 }
 
 export const SEOHead = ({
@@ -28,6 +28,7 @@ export const SEOHead = ({
   modifiedTime,
   author = "AMARISÉ",
   noIndex = false,
+  hreflang,
 }: SEOHeadProps) => {
   const siteTitle = "AMARISÉ";
   const fullTitle = title ? `${title} | ${siteTitle}` : `${siteTitle} | Luxury Beauty, Fashion & Lifestyle`;
@@ -35,16 +36,19 @@ export const SEOHead = ({
 
   return (
     <Helmet>
-      {/* Primary Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       {noIndex && <meta name="robots" content="noindex, nofollow" />}
       
-      {/* Canonical URL */}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
-      {/* Open Graph / Facebook */}
+      {/* hreflang for international SEO */}
+      {hreflang?.map(({ lang, href }) => (
+        <link key={lang} rel="alternate" hrefLang={lang} href={href} />
+      ))}
+
+      {/* Open Graph */}
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={fullTitle} />
@@ -73,10 +77,9 @@ export const SEOHead = ({
   );
 };
 
-/**
- * JSON-LD Structured Data Components
- * Backend developers: These generate SEO-friendly structured data
- */
+/* ────────────────────────────────────────
+   JSON-LD Structured Data Components
+   ──────────────────────────────────────── */
 
 interface ProductSchemaProps {
   name: string;
@@ -86,6 +89,9 @@ interface ProductSchemaProps {
   currency?: string;
   availability?: "InStock" | "OutOfStock" | "PreOrder";
   brand?: string;
+  sku?: string;
+  ratingValue?: number;
+  reviewCount?: number;
 }
 
 export const ProductSchema = ({
@@ -96,25 +102,34 @@ export const ProductSchema = ({
   currency = "EUR",
   availability = "InStock",
   brand = "AMARISÉ",
+  sku,
+  ratingValue,
+  reviewCount,
 }: ProductSchemaProps) => {
-  const schema = {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
     name,
     description,
     image,
-    brand: {
-      "@type": "Brand",
-      name: brand,
-    },
+    brand: { "@type": "Brand", name: brand },
     offers: {
       "@type": "Offer",
       price,
       priceCurrency: currency,
       availability: `https://schema.org/${availability}`,
+      seller: { "@type": "Organization", name: brand },
     },
   };
-
+  if (sku) schema.sku = sku;
+  if (ratingValue && reviewCount) {
+    schema.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue,
+      reviewCount,
+      bestRating: 5,
+    };
+  }
   return (
     <Helmet>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -147,20 +162,13 @@ export const ArticleSchema = ({
     image,
     datePublished,
     dateModified: dateModified || datePublished,
-    author: {
-      "@type": "Organization",
-      name: author,
-    },
+    author: { "@type": "Organization", name: author },
     publisher: {
       "@type": "Organization",
       name: "AMARISÉ",
-      logo: {
-        "@type": "ImageObject",
-        url: "/logo.png",
-      },
+      logo: { "@type": "ImageObject", url: "/logo.png" },
     },
   };
-
   return (
     <Helmet>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -183,7 +191,97 @@ export const BreadcrumbSchema = ({
       item: item.url,
     })),
   };
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+};
 
+/** Organization Schema — placed once on homepage */
+export const OrganizationSchema = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AMARISÉ",
+    alternateName: "Amarise Maison Avenue",
+    url: "https://amarisemaisonavenue.com",
+    logo: "https://amarisemaisonavenue.com/logo.png",
+    description: "A global luxury house encompassing beauty, atelier fashion, and lifestyle objects. A product of Baalvion Industries Private Limited.",
+    foundingDate: "2024",
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Baalvion Industries Private Limited",
+    },
+    sameAs: [
+      "https://instagram.com/amarise",
+      "https://facebook.com/amarise",
+      "https://twitter.com/amarise",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "contact@amarise.com",
+      contactType: "customer service",
+      availableLanguage: ["English"],
+    },
+  };
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+};
+
+/** CollectionPage Schema — for pillar/family pages */
+export const CollectionPageSchema = ({
+  name,
+  description,
+  url,
+  numberOfItems,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  numberOfItems: number;
+}) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url,
+    numberOfItems,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "AMARISÉ",
+      url: "https://amarisemaisonavenue.com",
+    },
+  };
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+};
+
+/** FAQ Schema */
+export const FAQSchema = ({
+  questions,
+}: {
+  questions: Array<{ question: string; answer: string }>;
+}) => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: questions.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: q.answer,
+      },
+    })),
+  };
   return (
     <Helmet>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>

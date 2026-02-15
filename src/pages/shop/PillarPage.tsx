@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { SEOHead } from "@/components/seo/SEOHead";
+import { SEOHead, CollectionPageSchema } from "@/components/seo/SEOHead";
 import { getPillar, getProductsByPillar } from "@/data/catalog-hierarchy";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -23,6 +23,12 @@ export default function PillarPage() {
   return (
     <Layout>
       <SEOHead title={`${pillarData.name} — AMARISÉ`} description={pillarData.description} />
+      <CollectionPageSchema
+        name={`${pillarData.name} — AMARISÉ`}
+        description={pillarData.description}
+        url={`https://amarisemaisonavenue.com/shop/${pillarData.slug}`}
+        numberOfItems={products.length}
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24">

@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { SEOHead } from "@/components/seo/SEOHead";
+import { SEOHead, CollectionPageSchema } from "@/components/seo/SEOHead";
 import { getPillar, getProductsByFamily, getMicroCategoriesByFamily } from "@/data/catalog-hierarchy";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -32,6 +32,12 @@ export default function FamilyPage() {
       <SEOHead
         title={`${familyData.name} — ${pillarData.name} — AMARISÉ`}
         description={familyData.description}
+      />
+      <CollectionPageSchema
+        name={`${familyData.name} — ${pillarData.name} — AMARISÉ`}
+        description={familyData.description}
+        url={`https://amarisemaisonavenue.com/shop/${pillarData.slug}/${familyData.slug}`}
+        numberOfItems={filteredProducts.length}
       />
 
       {/* Breadcrumb + Header */}
