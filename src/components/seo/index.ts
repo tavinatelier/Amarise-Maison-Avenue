@@ -1,1 +1,9 @@
-export { SEOHead, ProductSchema, ArticleSchema, BreadcrumbSchema } from './SEOHead';
+export {
+  SEOHead,
+  ProductSchema,
+  ArticleSchema,
+  BreadcrumbSchema,
+  OrganizationSchema,
+  CollectionPageSchema,
+  FAQSchema,
+} from './SEOHead';

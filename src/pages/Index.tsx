@@ -7,7 +7,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
-import { SEOHead } from "@/components/seo";
+import { SEOHead, OrganizationSchema } from "@/components/seo";
 import {
   CinematicHero,
   EditorialSection,
@@ -38,6 +38,7 @@ const Index = () => {
   return (
     <Layout>
       <SEOHead />
+      <OrganizationSchema />
       
       {/* ============ CINEMATIC HERO ============ */}
       <CinematicHero

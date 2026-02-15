@@ -102,6 +102,13 @@ import AdminCategoryAnalytics from "./pages/admin/CategoryAnalytics";
 import PillarPage from "./pages/shop/PillarPage";
 import FamilyPage from "./pages/shop/FamilyPage";
 import ProductDetailPage from "./pages/shop/ProductDetailPage";
+import NewArrivals from "./pages/shop/NewArrivals";
+import BestSellers from "./pages/shop/BestSellers";
+
+// Brand Authority pages
+import Press from "./pages/Press";
+import Craftsmanship from "./pages/Craftsmanship";
+import CareGuides from "./pages/CareGuides";
 
 const queryClient = new QueryClient();
 
@@ -145,6 +152,11 @@ const App = () => (
             <Route path="/shipping-returns" element={<ShippingReturns />} />
             <Route path="/size-guide" element={<SizeGuide />} />
             <Route path="/customer-care" element={<CustomerCare />} />
+            <Route path="/press" element={<Press />} />
+            <Route path="/craftsmanship" element={<Craftsmanship />} />
+            <Route path="/care-guides" element={<CareGuides />} />
+            <Route path="/new-arrivals" element={<NewArrivals />} />
+            <Route path="/best-sellers" element={<BestSellers />} />
 
             {/* Legal Routes */}
             <Route path="/privacy" element={<PrivacyPolicy />} />

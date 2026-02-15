@@ -1,25 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://amarise.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://amarise.com/about-amarise</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://amarise.com/journal</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://amarise.com/discover</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://amarise.com/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://amarise.com/values-sustainability</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://amarise.com/customer-care</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://amarise.com/shipping-returns</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://amarise.com/size-guide</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <!-- Core Pages -->
+  <url><loc>https://amarisemaisonavenue.com/</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/about-amarise</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/journal</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/discover</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/contact</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/values-sustainability</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/customer-care</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shipping-returns</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/size-guide</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <!-- Brand Authority -->
+  <url><loc>https://amarisemaisonavenue.com/press</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/craftsmanship</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/care-guides</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/beauty</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/atelier</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/lifestyle</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Virtual Collections -->
+  <url><loc>https://amarisemaisonavenue.com/new-arrivals</loc><lastmod>2025-02-15</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/best-sellers</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <!-- Shop Pillars -->
-  <url><loc>https://amarise.com/shop/women</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amarise.com/shop/men</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amarise.com/shop/accessories</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amarise.com/shop/footwear</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amarise.com/shop/jewelry</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amarise.com/shop/maison</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://amarise.com/shop/editions</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/maison</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/editions</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <!-- Women Families -->
+  <url><loc>https://amarisemaisonavenue.com/shop/women/dresses</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/ready-to-wear</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/outerwear-w</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/knitwear-w</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/eveningwear</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/tops-w</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/bottoms-w</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/tailoring-w</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/women/resortwear</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Men Families -->
+  <url><loc>https://amarisemaisonavenue.com/shop/men/jackets</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/shirts</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/tailoring-m</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/knitwear-m</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/trousers</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/casualwear</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/formalwear</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/outerwear-m</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Accessories Families -->
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/bags</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/small-leather-goods</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/belts</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/sunglasses</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/scarves</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/tech-accessories</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/travel</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Footwear Families -->
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear/heels</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear/flats</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear/sneakers</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear/boots</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear/sandals</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear/formal-shoes</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Jewelry Families -->
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry/necklaces</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry/earrings</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry/bracelets</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry/rings</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry/fine-jewelry</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry/limited-pieces</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Maison Families -->
+  <url><loc>https://amarisemaisonavenue.com/shop/maison/home-decor</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/maison/fragrance</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/maison/tableware</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/maison/objects</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/maison/textiles</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/maison/lifestyle-maison</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Editions Families -->
+  <url><loc>https://amarisemaisonavenue.com/shop/editions/limited-edition</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/editions/seasonal-drops</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/editions/collaborations</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/editions/archive-editions</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/editions/signature-collection</loc><lastmod>2025-02-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- Product Pages (50 products) -->
+  <url><loc>https://amarisemaisonavenue.com/shop/women/dresses/elan-silk-midi-dress</loc><lastmod>2025-02-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/men/jackets/nocturne-velvet-blazer</loc><lastmod>2025-02-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/accessories/bags/lumiere-tote</loc><lastmod>2025-01-30</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/footwear/heels/aura-stiletto-pump</loc><lastmod>2025-02-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/jewelry/necklaces/eternelle-pendant</loc><lastmod>2025-02-03</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/maison/fragrance/nuit-calme-candle</loc><lastmod>2025-01-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/shop/editions/limited-edition/aurore-embroidered-cape</loc><lastmod>2025-02-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <!-- Editorial -->
+  <url><loc>https://amarisemaisonavenue.com/beauty/signature-lips</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/beauty/radiance-serum</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/beauty/rituals</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/beauty/ingredients-philosophy</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/atelier/collections</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/atelier/lookbook</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/atelier/craft-design</loc><lastmod>2025-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <!-- Legal -->
-  <url><loc>https://amarise.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://amarise.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://amarise.com/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://amarise.com/refund-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/privacy</loc><lastmod>2025-02-15</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/terms</loc><lastmod>2025-02-15</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/cookies</loc><lastmod>2025-02-15</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/refund-policy</loc><lastmod>2025-02-15</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://amarisemaisonavenue.com/authenticity</loc><lastmod>2025-02-15</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
