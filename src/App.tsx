@@ -97,6 +97,7 @@ import AdminSystemFlags from "./pages/admin/SystemFlags";
 import AdminSystemMaintenance from "./pages/admin/SystemMaintenance";
 import AdminCategories from "./pages/admin/Categories";
 import AdminCategoryAnalytics from "./pages/admin/CategoryAnalytics";
+import AdminGovernance from "./pages/admin/Governance";
 
 // Shop pages
 import PillarPage from "./pages/shop/PillarPage";
@@ -214,6 +215,7 @@ const App = () => (
             <Route path="/admin/system/maintenance" element={<AdminSystemMaintenance />} />
             <Route path="/admin/categories" element={<AdminCategories />} />
             <Route path="/admin/categories/analytics" element={<AdminCategoryAnalytics />} />
+            <Route path="/admin/governance" element={<AdminGovernance />} />
 
             {/* Shop Routes */}
             <Route path="/shop/:pillar" element={<PillarPage />} />
