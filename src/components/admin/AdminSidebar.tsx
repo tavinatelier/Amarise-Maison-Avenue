@@ -50,6 +50,7 @@ const financeItems = [
 ];
 
 const governanceItems = [
+  { title: "Governance", url: "/admin/governance", icon: Shield },
   { title: "Approvals", url: "/admin/approvals", icon: Shield },
   { title: "Audit Log", url: "/admin/audit", icon: Clock },
   { title: "Incidents", url: "/admin/incidents", icon: AlertTriangle },
