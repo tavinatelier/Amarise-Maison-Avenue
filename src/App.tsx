@@ -97,7 +97,17 @@ import AdminSystemFlags from "./pages/admin/SystemFlags";
 import AdminSystemMaintenance from "./pages/admin/SystemMaintenance";
 import AdminCategories from "./pages/admin/Categories";
 import AdminCategoryAnalytics from "./pages/admin/CategoryAnalytics";
-import AdminGovernance from "./pages/admin/Governance";
+import AdminGovernance from "./pages/admin/GovernanceControl";
+import AdminHomepageBuilder from "./pages/admin/HomepageBuilder";
+import AdminNavigationBuilder from "./pages/admin/NavigationBuilder";
+import AdminCollections from "./pages/admin/CollectionsControl";
+import AdminPageBuilder from "./pages/admin/PageBuilder";
+import AdminPricing from "./pages/admin/PricingCurrency";
+import AdminOrdersControl from "./pages/admin/OrdersControl";
+import AdminInventoryControl from "./pages/admin/InventoryControl";
+import AdminRoles from "./pages/admin/RolesPermissions";
+import AdminAuditTimeline from "./pages/admin/AuditTimeline";
+import AdminSystemSettings from "./pages/admin/SystemSettings";
 
 // Shop pages
 import PillarPage from "./pages/shop/PillarPage";
@@ -190,14 +200,14 @@ const App = () => (
             {/* Admin Routes */}
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/admin/products" element={<AdminProducts />} />
-            <Route path="/admin/orders" element={<AdminOrders />} />
+            <Route path="/admin/orders" element={<AdminOrdersControl />} />
             <Route path="/admin/orders/:id" element={<AdminOrderDetail />} />
             <Route path="/admin/customers" element={<AdminCustomers />} />
             <Route path="/admin/customers/:id" element={<AdminCustomerDetail />} />
             <Route path="/admin/approvals" element={<AdminApprovals />} />
-            <Route path="/admin/audit" element={<AdminAuditLog />} />
+            <Route path="/admin/audit" element={<AdminAuditTimeline />} />
             <Route path="/admin/incidents" element={<AdminIncidents />} />
-            <Route path="/admin/inventory" element={<AdminInventory />} />
+            <Route path="/admin/inventory" element={<AdminInventoryControl />} />
             <Route path="/admin/inventory/:sku" element={<AdminInventoryDetail />} />
             <Route path="/admin/finance" element={<AdminFinance />} />
             <Route path="/admin/finance/reports" element={<AdminFinanceReports />} />
@@ -216,6 +226,13 @@ const App = () => (
             <Route path="/admin/categories" element={<AdminCategories />} />
             <Route path="/admin/categories/analytics" element={<AdminCategoryAnalytics />} />
             <Route path="/admin/governance" element={<AdminGovernance />} />
+            <Route path="/admin/homepage" element={<AdminHomepageBuilder />} />
+            <Route path="/admin/navigation" element={<AdminNavigationBuilder />} />
+            <Route path="/admin/collections" element={<AdminCollections />} />
+            <Route path="/admin/pages" element={<AdminPageBuilder />} />
+            <Route path="/admin/pricing" element={<AdminPricing />} />
+            <Route path="/admin/roles" element={<AdminRoles />} />
+            <Route path="/admin/settings" element={<AdminSystemSettings />} />
 
             {/* Shop Routes */}
             <Route path="/shop/:pillar" element={<PillarPage />} />
