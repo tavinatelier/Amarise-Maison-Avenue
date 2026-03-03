@@ -108,6 +108,10 @@ import AdminInventoryControl from "./pages/admin/InventoryControl";
 import AdminRoles from "./pages/admin/RolesPermissions";
 import AdminAuditTimeline from "./pages/admin/AuditTimeline";
 import AdminSystemSettings from "./pages/admin/SystemSettings";
+import AdminAnalyticsDashboard from "./pages/admin/AnalyticsDashboard";
+import AdminExecutive from "./pages/admin/ExecutiveDashboard";
+import AdminEditorial from "./pages/admin/EditorialManager";
+import AdminPerformance from "./pages/admin/PerformanceSettings";
 
 // Shop pages
 import PillarPage from "./pages/shop/PillarPage";
@@ -233,6 +237,10 @@ const App = () => (
             <Route path="/admin/pricing" element={<AdminPricing />} />
             <Route path="/admin/roles" element={<AdminRoles />} />
             <Route path="/admin/settings" element={<AdminSystemSettings />} />
+            <Route path="/admin/analytics" element={<AdminAnalyticsDashboard />} />
+            <Route path="/admin/executive" element={<AdminExecutive />} />
+            <Route path="/admin/editorial" element={<AdminEditorial />} />
+            <Route path="/admin/performance" element={<AdminPerformance />} />
 
             {/* Shop Routes */}
             <Route path="/shop/:pillar" element={<PillarPage />} />
