@@ -27,11 +27,13 @@ const allNavItems = {
     { title: "Homepage", url: "/admin/homepage", icon: Home, perm: "homepage" },
     { title: "Pages", url: "/admin/pages", icon: FileText, perm: "pages" },
     { title: "Navigation", url: "/admin/navigation", icon: Navigation, perm: "navigation" },
+    { title: "Editorial", url: "/admin/editorial", icon: FileText, perm: "pages" },
   ],
   finance: [
     { title: "Pricing & Currency", url: "/admin/pricing", icon: DollarSign, perm: "pricing" },
     { title: "Finance", url: "/admin/finance", icon: DollarSign, perm: "pricing" },
-    { title: "Analytics", url: "/admin/analytics/funnel", icon: BarChart3, perm: "dashboard" },
+    { title: "Analytics", url: "/admin/analytics", icon: BarChart3, perm: "dashboard" },
+    { title: "Executive", url: "/admin/executive", icon: LayoutDashboard, perm: "dashboard" },
   ],
   governance: [
     { title: "Governance", url: "/admin/governance", icon: Shield, perm: "governance" },
@@ -42,6 +44,7 @@ const allNavItems = {
     { title: "Team", url: "/admin/team", icon: UserCog, perm: "dashboard" },
     { title: "System", url: "/admin/system", icon: Server, perm: "dashboard" },
     { title: "Settings", url: "/admin/settings", icon: Settings, perm: "settings" },
+    { title: "Performance", url: "/admin/performance", icon: Server, perm: "settings" },
   ],
 };
 
