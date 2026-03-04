@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import {
   LayoutDashboard, Package, ShoppingCart, Users, Settings, Shield, Clock, ChevronLeft, ChevronRight,
   Warehouse, DollarSign, UserCog, BarChart3, RefreshCw, Server, FolderTree, Home, Navigation, FileText,
-  Layers, UserCheck,
+  Layers, UserCheck, Globe,
 } from "lucide-react";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
@@ -39,6 +39,11 @@ const allNavItems = {
     { title: "Governance", url: "/admin/governance", icon: Shield, perm: "governance" },
     { title: "Roles", url: "/admin/roles", icon: UserCheck, perm: "roles" },
     { title: "Audit Log", url: "/admin/audit", icon: Clock, perm: "audit" },
+  ],
+  holding: [
+    { title: "Regions", url: "/admin/holding/regions", icon: Globe, perm: "governance" },
+    { title: "Country Analytics", url: "/admin/holding/analytics", icon: BarChart3, perm: "dashboard" },
+    { title: "Region Control", url: "/admin/holding/region-control", icon: Shield, perm: "governance" },
   ],
   system: [
     { title: "Team", url: "/admin/team", icon: UserCog, perm: "dashboard" },
@@ -92,6 +97,7 @@ export function AdminSidebar() {
     { label: "Content", key: "content" },
     { label: "Finance", key: "finance" },
     { label: "Governance", key: "governance" },
+    { label: "Holding", key: "holding" },
     { label: "System", key: "system" },
   ];
 
