@@ -6,3 +6,6 @@ export type { ShippingUpdateData, ShippingStatus } from './shipping-update';
 
 export { generateRefundNotificationEmail } from './refund-notification';
 export type { RefundNotificationData, RefundStatus, RefundReason, RefundItem } from './refund-notification';
+
+export { generateNewsletterSignupEmail } from './newsletter-signup';
+export type { NewsletterSignupData } from './newsletter-signup';

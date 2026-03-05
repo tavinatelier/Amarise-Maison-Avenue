@@ -115,6 +115,8 @@ import AdminPerformance from "./pages/admin/PerformanceSettings";
 import AdminHoldingRegions from "./pages/admin/HoldingRegions";
 import AdminHoldingAnalytics from "./pages/admin/HoldingAnalytics";
 import AdminHoldingRegionControl from "./pages/admin/HoldingRegionControl";
+import AdminTaskBoard from "./pages/admin/TaskBoard";
+import AdminSEOManager from "./pages/admin/SEOManager";
 
 // Shop pages
 import PillarPage from "./pages/shop/PillarPage";
@@ -247,6 +249,8 @@ const App = () => (
             <Route path="/admin/holding/regions" element={<AdminHoldingRegions />} />
             <Route path="/admin/holding/analytics" element={<AdminHoldingAnalytics />} />
             <Route path="/admin/holding/region-control" element={<AdminHoldingRegionControl />} />
+            <Route path="/admin/tasks" element={<AdminTaskBoard />} />
+            <Route path="/admin/seo" element={<AdminSEOManager />} />
 
             {/* Shop Routes */}
             <Route path="/shop/:pillar" element={<PillarPage />} />
