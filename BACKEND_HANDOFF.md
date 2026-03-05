@@ -299,10 +299,38 @@ See [FRONTEND_FREEZE.md](./FRONTEND_FREEZE.md) for complete list.
 
 ---
 
+## Task Management
+
+### Task Service (localStorage-backed)
+| Function | API Endpoint | Purpose |
+|----------|--------------|---------|
+| `getTasks()` | GET /tasks | List all tasks |
+| `createTask()` | POST /tasks | Create task |
+| `updateTaskStatus()` | PATCH /tasks/:id/status | Update status |
+| `assignTask()` | PATCH /tasks/:id/assign | Reassign |
+
+### SEO Service (localStorage-backed)
+| Function | API Endpoint | Purpose |
+|----------|--------------|---------|
+| `getPageSEO()` | GET /seo/pages | List page meta |
+| `updatePageSEO()` | PATCH /seo/pages/:id | Update meta |
+| `exportSitemap()` | GET /seo/sitemap.xml | Generate sitemap |
+
+### Email Templates
+| Template | Trigger | Service |
+|----------|---------|---------|
+| Order Confirmation | Order created | Email API |
+| Shipping Update | Shipment status change | Email API |
+| Refund Notification | Refund processed | Email API |
+| Newsletter Signup | User subscribes | Email API |
+
+---
+
 ## Version History
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 5.0 | 2025-03-05 | Added task management, SEO admin, newsletter email |
 | 4.0 | 2024-01-09 | Added extended services & operations docs |
 | 3.0 | 2024-01-04 | Added Global Ops services & documentation |
 | 2.0 | 2024-01-02 | Added complete documentation suite |

@@ -1,0 +1,100 @@
+{
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "Upload Spring 2025 Collection Images",
+      "description": "Photograph and upload all 12 pieces from the Spring Summer 2025 collection to the product gallery.",
+      "assignedUser": "user_002",
+      "assignedUserName": "Elena Marchetti",
+      "deadline": "2025-03-15T23:59:00Z",
+      "status": "in_progress",
+      "priority": "high",
+      "category": "image_upload",
+      "createdBy": "user_001",
+      "createdByName": "Founder",
+      "createdAt": "2025-02-28T10:00:00Z",
+      "updatedAt": "2025-03-01T14:30:00Z"
+    },
+    {
+      "id": "task-002",
+      "title": "Write SEO Article: Luxury Silk Care Guide",
+      "description": "Create a 1500-word article on caring for silk garments, targeting 'luxury silk care' keyword.",
+      "assignedUser": "user_003",
+      "assignedUserName": "James Whitfield",
+      "deadline": "2025-03-10T23:59:00Z",
+      "status": "pending",
+      "priority": "medium",
+      "category": "seo_article",
+      "createdBy": "user_001",
+      "createdByName": "Founder",
+      "createdAt": "2025-02-27T09:00:00Z",
+      "updatedAt": "2025-02-27T09:00:00Z"
+    },
+    {
+      "id": "task-003",
+      "title": "List Nocturne Velvet Blazer",
+      "description": "Complete product listing with all variants, pricing for IN/US/UK/CA, and SEO metadata.",
+      "assignedUser": "user_004",
+      "assignedUserName": "Sophie Laurent",
+      "deadline": "2025-03-05T23:59:00Z",
+      "status": "completed",
+      "priority": "high",
+      "category": "product_listing",
+      "createdBy": "user_002",
+      "createdByName": "Elena Marchetti",
+      "createdAt": "2025-02-20T11:00:00Z",
+      "updatedAt": "2025-03-01T16:00:00Z"
+    },
+    {
+      "id": "task-004",
+      "title": "Review & Approve Journal: Spring Rituals",
+      "description": "Review editorial content for the Spring Rituals journal entry. Check brand tone, imagery, and SEO.",
+      "assignedUser": "user_001",
+      "assignedUserName": "Founder",
+      "deadline": "2025-03-08T23:59:00Z",
+      "status": "pending",
+      "priority": "medium",
+      "category": "content_approval",
+      "createdBy": "user_003",
+      "createdByName": "James Whitfield",
+      "createdAt": "2025-02-25T14:00:00Z",
+      "updatedAt": "2025-02-25T14:00:00Z"
+    },
+    {
+      "id": "task-005",
+      "title": "Update Meta Descriptions for Beauty Pillar",
+      "description": "Optimize meta titles and descriptions for all Beauty category pages to improve CTR.",
+      "assignedUser": "user_003",
+      "assignedUserName": "James Whitfield",
+      "deadline": "2025-03-12T23:59:00Z",
+      "status": "in_progress",
+      "priority": "low",
+      "category": "seo_article",
+      "createdBy": "user_001",
+      "createdByName": "Founder",
+      "createdAt": "2025-02-26T08:00:00Z",
+      "updatedAt": "2025-03-02T10:00:00Z"
+    },
+    {
+      "id": "task-006",
+      "title": "Activate Canada Storefront",
+      "description": "Enable CAD currency, set shipping zones, verify tax rules, and test checkout flow for Canada.",
+      "assignedUser": "user_005",
+      "assignedUserName": "Raj Mehta",
+      "deadline": "2025-03-20T23:59:00Z",
+      "status": "pending",
+      "priority": "high",
+      "category": "product_listing",
+      "createdBy": "user_001",
+      "createdByName": "Founder",
+      "createdAt": "2025-03-01T09:00:00Z",
+      "updatedAt": "2025-03-01T09:00:00Z"
+    }
+  ],
+  "categories": [
+    { "id": "product_listing", "label": "Product Listing" },
+    { "id": "seo_article", "label": "SEO Article" },
+    { "id": "image_upload", "label": "Image Upload" },
+    { "id": "content_approval", "label": "Content Approval" }
+  ]
+}

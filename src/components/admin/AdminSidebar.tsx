@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import {
   LayoutDashboard, Package, ShoppingCart, Users, Settings, Shield, Clock, ChevronLeft, ChevronRight,
   Warehouse, DollarSign, UserCog, BarChart3, RefreshCw, Server, FolderTree, Home, Navigation, FileText,
-  Layers, UserCheck, Globe,
+  Layers, UserCheck, Globe, ClipboardList,
 } from "lucide-react";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
@@ -28,6 +28,7 @@ const allNavItems = {
     { title: "Pages", url: "/admin/pages", icon: FileText, perm: "pages" },
     { title: "Navigation", url: "/admin/navigation", icon: Navigation, perm: "navigation" },
     { title: "Editorial", url: "/admin/editorial", icon: FileText, perm: "pages" },
+    { title: "SEO", url: "/admin/seo", icon: Globe, perm: "pages" },
   ],
   finance: [
     { title: "Pricing & Currency", url: "/admin/pricing", icon: DollarSign, perm: "pricing" },
@@ -47,6 +48,7 @@ const allNavItems = {
   ],
   system: [
     { title: "Team", url: "/admin/team", icon: UserCog, perm: "dashboard" },
+    { title: "Tasks", url: "/admin/tasks", icon: ClipboardList, perm: "dashboard" },
     { title: "System", url: "/admin/system", icon: Server, perm: "dashboard" },
     { title: "Settings", url: "/admin/settings", icon: Settings, perm: "settings" },
     { title: "Performance", url: "/admin/performance", icon: Server, perm: "settings" },
