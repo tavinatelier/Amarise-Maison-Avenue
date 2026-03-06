@@ -117,6 +117,13 @@ import AdminHoldingAnalytics from "./pages/admin/HoldingAnalytics";
 import AdminHoldingRegionControl from "./pages/admin/HoldingRegionControl";
 import AdminTaskBoard from "./pages/admin/TaskBoard";
 import AdminSEOManager from "./pages/admin/SEOManager";
+import AdminContentManagement from "./pages/admin/ContentManagement";
+import AdminAutomation from "./pages/admin/AutomationCenter";
+import AdminAds from "./pages/admin/AdNetworkManager";
+import AdminApi from "./pages/admin/ApiManager";
+import AdminSystemHealth from "./pages/admin/SystemHealth";
+import AdminSitemaps from "./pages/admin/SitemapManager";
+import AdminUsers from "./pages/admin/UserManagement";
 
 // Shop pages
 import PillarPage from "./pages/shop/PillarPage";
@@ -251,6 +258,13 @@ const App = () => (
             <Route path="/admin/holding/region-control" element={<AdminHoldingRegionControl />} />
             <Route path="/admin/tasks" element={<AdminTaskBoard />} />
             <Route path="/admin/seo" element={<AdminSEOManager />} />
+            <Route path="/admin/content" element={<AdminContentManagement />} />
+            <Route path="/admin/automation" element={<AdminAutomation />} />
+            <Route path="/admin/ads" element={<AdminAds />} />
+            <Route path="/admin/api" element={<AdminApi />} />
+            <Route path="/admin/system-health" element={<AdminSystemHealth />} />
+            <Route path="/admin/sitemaps" element={<AdminSitemaps />} />
+            <Route path="/admin/users" element={<AdminUsers />} />
 
             {/* Shop Routes */}
             <Route path="/shop/:pillar" element={<PillarPage />} />
