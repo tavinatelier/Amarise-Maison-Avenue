@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import {
   LayoutDashboard, Package, ShoppingCart, Users, Settings, Shield, Clock, ChevronLeft, ChevronRight,
   Warehouse, DollarSign, UserCog, BarChart3, RefreshCw, Server, FolderTree, Home, Navigation, FileText,
-  Layers, UserCheck, Globe, ClipboardList,
+  Layers, UserCheck, Globe, ClipboardList, Zap, Megaphone, Plug, Activity, Map,
 } from "lucide-react";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
@@ -24,11 +24,13 @@ const allNavItems = {
     { title: "Categories", url: "/admin/categories", icon: FolderTree, perm: "products" },
   ],
   content: [
+    { title: "Content", url: "/admin/content", icon: FileText, perm: "homepage" },
     { title: "Homepage", url: "/admin/homepage", icon: Home, perm: "homepage" },
     { title: "Pages", url: "/admin/pages", icon: FileText, perm: "pages" },
     { title: "Navigation", url: "/admin/navigation", icon: Navigation, perm: "navigation" },
     { title: "Editorial", url: "/admin/editorial", icon: FileText, perm: "pages" },
     { title: "SEO", url: "/admin/seo", icon: Globe, perm: "pages" },
+    { title: "Sitemaps", url: "/admin/sitemaps", icon: Map, perm: "pages" },
   ],
   finance: [
     { title: "Pricing & Currency", url: "/admin/pricing", icon: DollarSign, perm: "pricing" },
@@ -46,9 +48,16 @@ const allNavItems = {
     { title: "Country Analytics", url: "/admin/holding/analytics", icon: BarChart3, perm: "dashboard" },
     { title: "Region Control", url: "/admin/holding/region-control", icon: Shield, perm: "governance" },
   ],
+  operations: [
+    { title: "Automation", url: "/admin/automation", icon: Zap, perm: "dashboard" },
+    { title: "Ad Network", url: "/admin/ads", icon: Megaphone, perm: "dashboard" },
+    { title: "API Manager", url: "/admin/api", icon: Plug, perm: "settings" },
+  ],
   system: [
+    { title: "Users", url: "/admin/users", icon: Users, perm: "dashboard" },
     { title: "Team", url: "/admin/team", icon: UserCog, perm: "dashboard" },
     { title: "Tasks", url: "/admin/tasks", icon: ClipboardList, perm: "dashboard" },
+    { title: "System Health", url: "/admin/system-health", icon: Activity, perm: "dashboard" },
     { title: "System", url: "/admin/system", icon: Server, perm: "dashboard" },
     { title: "Settings", url: "/admin/settings", icon: Settings, perm: "settings" },
     { title: "Performance", url: "/admin/performance", icon: Server, perm: "settings" },
@@ -100,6 +109,7 @@ export function AdminSidebar() {
     { label: "Finance", key: "finance" },
     { label: "Governance", key: "governance" },
     { label: "Holding", key: "holding" },
+    { label: "Operations", key: "operations" },
     { label: "System", key: "system" },
   ];
 

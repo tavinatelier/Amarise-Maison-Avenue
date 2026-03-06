@@ -1,0 +1,175 @@
+{
+  "orders": [
+    {
+      "id": "ord-001",
+      "orderNumber": "AMR-2025-0001",
+      "customer": { "id": "cust-001", "name": "Isabella Rossi", "email": "isabella@example.com" },
+      "items": [
+        { "id": "item-001", "productId": "prod-001", "title": "Élan Silk Midi Dress", "quantity": 1, "price": 1850, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 1850,
+      "tax": 370,
+      "shipping": 0,
+      "total": 2220,
+      "currency": "EUR",
+      "country": "IT",
+      "status": "delivered",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "delivered",
+      "shippingAddress": { "line1": "Via Roma 42", "city": "Milan", "postalCode": "20121", "country": "Italy" },
+      "trackingNumber": "DHL-IT-98765432",
+      "createdAt": "2025-02-20T10:00:00Z",
+      "updatedAt": "2025-02-25T14:30:00Z"
+    },
+    {
+      "id": "ord-002",
+      "orderNumber": "AMR-2025-0002",
+      "customer": { "id": "cust-002", "name": "James Harrington", "email": "james.h@example.com" },
+      "items": [
+        { "id": "item-002", "productId": "prod-003", "title": "Nocturne Velvet Blazer", "quantity": 1, "price": 2200, "image": "/placeholder.svg" },
+        { "id": "item-003", "productId": "prod-007", "title": "Lumière Tote", "quantity": 1, "price": 1450, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 3650,
+      "tax": 730,
+      "shipping": 18,
+      "total": 4398,
+      "currency": "GBP",
+      "country": "GB",
+      "status": "shipped",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "shipped",
+      "shippingAddress": { "line1": "14 Kensington Gardens", "city": "London", "postalCode": "W8 4PE", "country": "United Kingdom" },
+      "trackingNumber": "DPD-GB-45678901",
+      "createdAt": "2025-02-27T14:30:00Z",
+      "updatedAt": "2025-03-01T09:00:00Z"
+    },
+    {
+      "id": "ord-003",
+      "orderNumber": "AMR-2025-0003",
+      "customer": { "id": "cust-003", "name": "Aisha Patel", "email": "aisha.p@example.com" },
+      "items": [
+        { "id": "item-004", "productId": "prod-005", "title": "Aura Stiletto Pump", "quantity": 1, "price": 890, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 890,
+      "tax": 160.2,
+      "shipping": 500,
+      "total": 1550.2,
+      "currency": "INR",
+      "country": "IN",
+      "status": "processing",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "processing",
+      "shippingAddress": { "line1": "Bandra West, 5th Floor", "city": "Mumbai", "postalCode": "400050", "country": "India" },
+      "trackingNumber": null,
+      "createdAt": "2025-02-26T09:15:00Z",
+      "updatedAt": "2025-02-26T09:15:00Z"
+    },
+    {
+      "id": "ord-004",
+      "orderNumber": "AMR-2025-0004",
+      "customer": { "id": "cust-004", "name": "Sophie Laurent", "email": "sophie.l@example.com" },
+      "items": [
+        { "id": "item-005", "productId": "prod-008", "title": "Celestine Diamond Ring", "quantity": 1, "price": 4200, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 4200,
+      "tax": 840,
+      "shipping": 0,
+      "total": 5040,
+      "currency": "EUR",
+      "country": "FR",
+      "status": "delivered",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "delivered",
+      "shippingAddress": { "line1": "8 Rue de Rivoli", "city": "Paris", "postalCode": "75001", "country": "France" },
+      "trackingNumber": "CHRONO-FR-11223344",
+      "createdAt": "2025-02-25T16:45:00Z",
+      "updatedAt": "2025-02-28T11:00:00Z"
+    },
+    {
+      "id": "ord-005",
+      "orderNumber": "AMR-2025-0005",
+      "customer": { "id": "cust-005", "name": "Michael Chen", "email": "michael.c@example.com" },
+      "items": [
+        { "id": "item-006", "productId": "prod-001", "title": "Élan Silk Midi Dress", "quantity": 1, "price": 1850, "image": "/placeholder.svg" },
+        { "id": "item-007", "productId": "prod-009", "title": "Aether Cashmere Coat", "quantity": 1, "price": 3200, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 5050,
+      "tax": 0,
+      "shipping": 35,
+      "total": 5085,
+      "currency": "USD",
+      "country": "US",
+      "status": "cancelled",
+      "paymentStatus": "refunded",
+      "fulfillmentStatus": "unfulfilled",
+      "shippingAddress": { "line1": "350 Fifth Avenue", "city": "New York", "postalCode": "10118", "country": "United States" },
+      "trackingNumber": null,
+      "createdAt": "2025-02-24T11:20:00Z",
+      "updatedAt": "2025-02-25T08:00:00Z"
+    },
+    {
+      "id": "ord-006",
+      "orderNumber": "AMR-2025-0006",
+      "customer": { "id": "cust-006", "name": "Priya Sharma", "email": "priya.s@example.com" },
+      "items": [
+        { "id": "item-008", "productId": "prod-010", "title": "Radiance Serum", "quantity": 2, "price": 185, "image": "/placeholder.svg" },
+        { "id": "item-009", "productId": "prod-011", "title": "Veil Lip Ritual", "quantity": 1, "price": 65, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 435,
+      "tax": 78.3,
+      "shipping": 800,
+      "total": 1313.3,
+      "currency": "INR",
+      "country": "IN",
+      "status": "delivered",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "delivered",
+      "shippingAddress": { "line1": "Koramangala, 3rd Block", "city": "Bangalore", "postalCode": "560034", "country": "India" },
+      "trackingNumber": "DTDC-IN-55667788",
+      "createdAt": "2025-02-22T07:30:00Z",
+      "updatedAt": "2025-02-27T12:00:00Z"
+    },
+    {
+      "id": "ord-007",
+      "orderNumber": "AMR-2025-0007",
+      "customer": { "id": "cust-007", "name": "Emily Wright", "email": "emily.w@example.com" },
+      "items": [
+        { "id": "item-010", "productId": "prod-012", "title": "Calma Vessel", "quantity": 1, "price": 320, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 320,
+      "tax": 41.6,
+      "shipping": 40,
+      "total": 401.6,
+      "currency": "CAD",
+      "country": "CA",
+      "status": "processing",
+      "paymentStatus": "paid",
+      "fulfillmentStatus": "processing",
+      "shippingAddress": { "line1": "200 Bay Street", "city": "Toronto", "postalCode": "M5J 2J2", "country": "Canada" },
+      "trackingNumber": null,
+      "createdAt": "2025-03-01T15:00:00Z",
+      "updatedAt": "2025-03-01T15:00:00Z"
+    },
+    {
+      "id": "ord-008",
+      "orderNumber": "AMR-2025-0008",
+      "customer": { "id": "cust-008", "name": "David Kim", "email": "david.k@example.com" },
+      "items": [
+        { "id": "item-011", "productId": "prod-013", "title": "Lumière Candle", "quantity": 3, "price": 95, "image": "/placeholder.svg" }
+      ],
+      "subtotal": 285,
+      "tax": 0,
+      "shipping": 15,
+      "total": 300,
+      "currency": "USD",
+      "country": "US",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "fulfillmentStatus": "unfulfilled",
+      "shippingAddress": { "line1": "1600 Market Street", "city": "San Francisco", "postalCode": "94102", "country": "United States" },
+      "trackingNumber": null,
+      "createdAt": "2025-03-04T09:45:00Z",
+      "updatedAt": "2025-03-04T09:45:00Z"
+    }
+  ]
+}
