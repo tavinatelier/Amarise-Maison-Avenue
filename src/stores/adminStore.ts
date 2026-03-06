@@ -269,7 +269,8 @@ export const useAdminStore = create<AdminStore>()(
       // Role
       currentRole: "founder",
       setRole: (role) => { set({ currentRole: role }); get().addAudit("Role changed", "System", `Switched to ${role}`); },
-      can: (section) => ROLE_PERMISSIONS[get().currentRole]?.includes(section) ?? false,
+      // DEV MODE: bypass permissions — all sections accessible
+      can: (_section) => true,
 
       // Audit
       auditLog: [],
