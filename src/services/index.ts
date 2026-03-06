@@ -89,3 +89,6 @@ export {
 
 // Extended Admin: System control
 export * from './system.service';
+
+// SEO management
+export * from './seo.service';
