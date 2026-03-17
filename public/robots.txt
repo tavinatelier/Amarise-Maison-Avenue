@@ -7,7 +7,7 @@ Disallow: /checkout
 Disallow: /private-client
 Disallow: /maintenance
 
-# Block AI crawlers (optional)
+# Block AI crawlers
 User-agent: GPTBot
 Disallow: /
 
