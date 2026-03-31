@@ -281,6 +281,7 @@ const App = () => (
         <SpeedInsights />
       </RitualBagProvider>
     </TooltipProvider>
+    <SpeedInsights />
   </QueryClientProvider>
 );
 
